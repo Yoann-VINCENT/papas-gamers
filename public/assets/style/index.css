@@ -23,7 +23,6 @@ header {
 }
 
 
-/*
 .hamburger-container {
     width: 50px;
     height: 50px;
@@ -31,29 +30,26 @@ header {
 }
 
 
-.hamburger-line, .hamburger-line::before, .hamburger-line::after {
-    display: block;
-    background-color: var(--troll-body-green);
-    position: absolute;
+.hamburger-line1, .hamburger-line2, .hamburger-line3 {
     height: 4px;
     width: 50px;
-}
-.hamburger-line::before, .hamburger-line::after {
-    content: " ";
+    background-color: var(--troll-body-green);
+    position: absolute;
+    transform: translateY(-50%);
+    border-radius: 5px;
 }
 
-.hamburger-line {
+.hamburger-line1 {
+    top: 25%;
+}
+
+.hamburger-line2 {
     top: 50%;
 }
 
-.hamburger-line::before {
-    top: 50px;
-}
-
-.hamburger-line::after {
+.hamburger-line3 {
     top: 75%;
 }
-*/
 
 
 button {
@@ -83,7 +79,7 @@ button {
 .nav-menu-overlay {
     background-color: black;
     opacity: 0.1;
-    position: fixed;
+    position: absolute;
     min-height: 100vh;
     min-width: 100vw;
 }

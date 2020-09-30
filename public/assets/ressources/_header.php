@@ -9,7 +9,11 @@
     <body>
         <header>
             <nav >
-                <button>Ham</button>
+                <div class="hamburger-container">
+                    <div class="hamburger-line1"></div>
+                    <div class="hamburger-line2"></div>
+                    <div class="hamburger-line3"></div>
+                </div>
                 <ul class="nav-menu">
                     <li> <a>Meet the papas</a> </li>
                     <li> <a>Arcade games</a> </li>
