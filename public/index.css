@@ -6,6 +6,11 @@
 .cartoucheAnchor{
     color: black;
 }
+.cartoucheAnchor:hover{
+    color: black;
+    text-decoration: none;
+    opacity: 0.85;
+}
 
 .gameCartouche{
     width: 90%;
@@ -32,7 +37,7 @@
 }
 
 .fakePlayButton{
-    width: 30%;
+    width: 50%;
     height: 35px;
     text-align: center;
     background-color: #ffca3a;
@@ -45,6 +50,9 @@
 }
 
 @media (orientation: landscape) {
+    .cartoucheAnchor{
+        width: auto;
+    }
     .gameIllustrationPicture{
         max-width: 50%;
     }
@@ -66,5 +74,21 @@
     }
     .gamePresentationText{
         max-height: 50%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .gamePage{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .cartoucheAnchor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 50%;
     }
 }
