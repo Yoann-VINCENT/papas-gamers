@@ -1,0 +1,70 @@
+.gameIcon{
+    max-width: 50px;
+    float: right;
+}
+
+.cartoucheAnchor{
+    color: black;
+}
+
+.gameCartouche{
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    border: solid #3d3d3d 2px;
+    padding: 5px;
+    border-radius: 15px;
+    background-color: #caffd0;
+}
+
+.gameTittle{
+    margin: auto;
+    width: 100%;
+}
+
+.gameIllustrationPicture{
+    border-radius: 15px;
+    border: solid #3d3d3d 2px;
+    object-fit: contain;
+}
+
+.fakePlayButton{
+    width: 30%;
+    height: 35px;
+    text-align: center;
+    background-color: #ffca3a;
+    border-radius: 15px;
+}
+
+.gamePresentationText{
+    padding: 10px;
+    text-align: center;
+}
+
+@media (orientation: landscape) {
+    .gameIllustrationPicture{
+        max-width: 50%;
+    }
+    .gamePresentationText{
+        max-width: 50%;
+    }
+    .fakePlayButton{
+        margin-left: auto;
+    }
+}
+
+@media (orientation: portrait) {
+    .gameCartouche{
+        flex-direction: column;
+    }
+    .gameIllustrationPicture{
+        max-height: 50%;
+        max-width: 100%;
+    }
+    .gamePresentationText{
+        max-height: 50%;
+    }
+}

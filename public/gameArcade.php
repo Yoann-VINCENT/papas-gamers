@@ -10,15 +10,17 @@
 <body>
 <?php include('_header.php'); ?>
 
-    <h2>Arcade games</h2>
     <img src="assets/images/icone/arcade.png" class="gameIcon" alt="icon of a gamepad">
-
-    <section class="container gameCartouche">
-        <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture" alt="gameplay picture of flexbox-zombies">
-        <p>lorem ipsum</p>
-        <button class="fakePlayButton">PLAY</button>
-    </section>
-
+    <h2>Arcade games</h2>
+    <a href="#" target="_blank" class="cartoucheAnchor">
+        <section class="container gameCartouche">
+            <h3 class="gameTittle">Flexbox Zombies</h3>
+            <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
+            <p class="gamePresentationText">Each section unravels part of the plot, gives you expertise over a new flexbox concept, and presents zombie survival challenges that force you to solidify your new skills like your life depends on it.
+            </p>
+            <button class="fakePlayButton">PLAY</button>
+        </section>
+    </a>
 <?php include('_footer.php'); ?>
 </body>
 </html>
