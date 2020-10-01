@@ -14,47 +14,12 @@
         <h2>Arcade games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
-            <a href="https://mastery.games/flexboxzombies/" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
+            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to our Whac-A-Mole game">
                 <section class="container gameCartouche">
-                    <h3 class="gameTittle">Flexbox Zombies</h3>
-                    <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
-                    <p class="gamePresentationText">Each section unravels part of the plot, gives you expertise over a new flexbox concept, and presents zombie survival challenges that force you to solidify your new skills like your life depends on it.<br>
+                    <h3 class="gameTittle">Whac-A-Mole</h3>
+                    <img src="assets/images/game/whac-a-mole.jpg" class="gameIllustrationPicture"   alt="gameplay picture of our Whac-A-Mole game">
+                    <p class="gamePresentationText">A typical Whac-A-Mole machine consists of a waist-level cabinet with a play area and display screen, and a large, soft, black mallet. Five holes in the play area top are filled with small plastic moles, which pop up at random. Points are scored by whacking each mole as it appears. The faster the reaction the higher the score.
                         <br>
-                        <button class="fakePlayButton">PLAY</button>
-                    </p>
-                </section>
-            </a>
-            <!-- Cartouche block 1 end-->
-            <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
-                <section class="container gameCartouche">
-                    <h3 class="gameTittle">Flexbox Zombies</h3>
-                    <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
-                    <p class="gamePresentationText">Each section unravels part of the plot, gives you expertise over a new flexbox concept, and presents zombie survival challenges that force you to solidify your new skills like your life depends on it.<br>
-                        <br>
-                        <button class="fakePlayButton">PLAY</button>
-                    </p>
-                </section>
-            </a>
-            <!-- Cartouche block 1 end-->
-            <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
-                <section class="container gameCartouche">
-                    <h3 class="gameTittle">Flexbox Zombies</h3>
-                    <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
-                    <p class="gamePresentationText">Each section unravels part of the plot, gives you expertise over a new flexbox concept, and presents zombie survival challenges that force you to solidify your new skills like your life depends on it.<br>
-                        <br>
-                        <button class="fakePlayButton">PLAY</button>
-                    </p>
-                </section>
-            </a>
-            <!-- Cartouche block 1 end-->
-            <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
-                <section class="container gameCartouche">
-                    <h3 class="gameTittle">Flexbox Zombies</h3>
-                    <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
-                    <p class="gamePresentationText">Each section unravels part of the plot, gives you expertise over a new flexbox concept, and presents zombie survival challenges that force you to solidify your new skills like your life depends on it.<br>
                         <br>
                         <button class="fakePlayButton">PLAY</button>
                     </p>
