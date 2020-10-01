@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="index.css">
-    <title>Arcade Games</title>
+    <title>Education Games</title>
 </head>
 <body>
 <?php include('_header.php'); ?>
     <main>
-        <img src="assets/images/icone/arcade.png" class="gameIcon" alt="icon of a gamepad">
-        <h2>Arcade games</h2>
+        <img src="assets/images/icone/Education.png" class="gameIcon" alt="icon of a notebook">
+        <h2>Education games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
             <a href="https://mastery.games/flexboxzombies/" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
