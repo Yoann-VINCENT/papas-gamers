@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="index.css">
     <title>Education Games</title>
 </head>
-<body>
+<body class="gameBackground">
 <?php include('_header.php'); ?>
     <main>
         <img src="assets/images/icone/Education.png" class="gameIcon" alt="icon of a notebook">
-        <h2>Education games</h2>
+        <h2 class="gameBigTittle">Education games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
             <a href="https://mastery.games/flexboxzombies/" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
@@ -65,6 +65,32 @@
                 </section>
             </a>
                 <!-- Cartouche block 4 end-->
+                <!-- Cartouche block 5 start-->
+            <a href="https://alexnisnevich.github.io/untrusted/" target="_blank" class="cartoucheAnchor" title="Go to Untrusted website">
+                <section class="container gameCartouche">
+                    <h3 class="gameTittle">Untrusted</h3>
+                    <img src="assets/images/game/untrusted.jpg" class="gameIllustrationPicture"   alt="gameplay picture of Untrusted">
+                    <p class="gamePresentationText">Untrusted is a meta-JavaScript adventure game where you play the role of Dr. Eval, an @ sign that can control the world around him by changing the source code. The player is presented with the functions that initialize every level and has to alter them using the game API to create and escape route for Dr. Eval.
+                        <br>
+                        <br>
+                        <button class="fakePlayButton">PLAY</button>
+                    </p>
+                </section>
+            </a>
+                <!-- Cartouche block 5 end-->
+                <!-- Cartouche block 6 start-->
+            <a href="http://www.hexinvaders.com/" target="_blank" class="cartoucheAnchor" title="Go to Hex Invaders website">
+                <section class="container gameCartouche">
+                    <h3 class="gameTittle">Hex Invaders</h3>
+                    <img src="assets/images/game/hex-invaders.jpg" class="gameIllustrationPicture"   alt="gameplay picture of Hex Invaders">
+                    <p class="gamePresentationText">In this version of the classic arcade game the world is attacked by a trio of aliens, each sporting a different color. To save humanity, the player must quickly translate a RGB hex value into human colors and shoot down the invaders.
+                        <br>
+                        <br>
+                        <button class="fakePlayButton">PLAY</button>
+                    </p>
+                </section>
+            </a>
+                <!-- Cartouche block 6 end-->
         </section>
     </main>
 <?php include('_footer.php'); ?>

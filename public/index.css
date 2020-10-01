@@ -7,11 +7,29 @@
     --blue: #779be7;
 }
 
+.gameBackground{
+    background-image: url("assets/images/game/gameBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gameBigTittle{
+    margin-top: 50px;
+    font-size: 2.2em;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right, #a5535500 5%, #4a7c59, #a5535500 95%);
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 5px #3d3d3d;
+}
 
 .gameIcon{
-    max-width: 50px;
-    float: right;
+    max-width: 70px;
+    float: top;
     margin: 15px 15px 0 0;
+    background-image: radial-gradient(#caffd0, #a5535500 75%);
+    padding: 10px;
 }
 
 .gamePage{
@@ -28,7 +46,7 @@
 .cartoucheAnchor:hover{
     color: white;
     text-decoration: none;
-    opacity: 0.85;
+    opacity: 0.95;
 }
 
 .gameCartouche{
@@ -41,6 +59,7 @@
     padding: 10px;
     border-radius: 15px;
     background-color: #3d3d3d;
+    box-shadow: 5px 5px 20px #caffd0;
 }
 
 .gameTittle{
@@ -68,8 +87,9 @@
 }
 
 .gamePresentationText{
-    padding: 10px;
-    text-align: center;
+    padding: 10px 20px 10px 30px;
+    text-align: justify;
+    text-align-last: center;
 }
 
 @media (orientation: landscape) {
@@ -112,4 +132,9 @@
         flex-wrap: wrap;
         justify-content: space-between;
     }
+    .gameBigTittle{
+        background: linear-gradient(to right, #a5535500 30%, #4a7c59, #a5535500 70%);
+    }
+    .gameIcon{
+        float: right;
 }

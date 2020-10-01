@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="index.css">
     <title>Reflexion Games</title>
 </head>
-<body>
+<body class="gameBackground">
 <?php include('_header.php'); ?>
     <main>
         <img src="assets/images/icone/Reflexion.png" class="gameIcon" alt="icon of a chess piece">
-        <h2>Reflexion games</h2>
+        <h2 class="gameBigTittle">Reflexion games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
             <a href="#" target="_blank" class="cartoucheAnchor" title="Go to our minesweeper game">

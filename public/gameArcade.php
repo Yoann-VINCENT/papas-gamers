@@ -7,11 +7,11 @@
     <link rel="stylesheet" href="index.css">
     <title>Arcade Games</title>
 </head>
-<body>
+<body class="gameBackground">
 <?php include('_header.php'); ?>
     <main>
         <img src="assets/images/icone/arcade.png" class="gameIcon" alt="icon of a gamepad">
-        <h2>Arcade games</h2>
+        <h2 class="gameBigTittle">Arcade games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
             <a href="#" target="_blank" class="cartoucheAnchor" title="Go to our Whac-A-Mole game">
