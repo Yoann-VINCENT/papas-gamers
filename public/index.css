@@ -53,6 +53,7 @@
     border: solid #3d3d3d 2px;
     object-fit: contain;
     filter: drop-shadow(1px 1px 2px #caffd0);
+    margin-top: 5px;
 }
 
 .fakePlayButton{

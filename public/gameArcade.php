@@ -14,7 +14,7 @@
         <h2>Arcade games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor">
+            <a href="https://mastery.games/flexboxzombies/" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Flexbox Zombies</h3>
                     <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
@@ -26,7 +26,7 @@
             </a>
             <!-- Cartouche block 1 end-->
             <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor">
+            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Flexbox Zombies</h3>
                     <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
@@ -38,7 +38,7 @@
             </a>
             <!-- Cartouche block 1 end-->
             <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor">
+            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Flexbox Zombies</h3>
                     <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
@@ -50,7 +50,7 @@
             </a>
             <!-- Cartouche block 1 end-->
             <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor">
+            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to flexbox-zombies website">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Flexbox Zombies</h3>
                     <img src="assets/images/game/flexbox-zombies.jpg" class="gameIllustrationPicture"   alt="gameplay picture of flexbox-zombies">
