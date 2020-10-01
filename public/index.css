@@ -24,14 +24,6 @@
     text-shadow: 1px 1px 5px #3d3d3d;
 }
 
-.gameIcon{
-    max-width: 70px;
-    float: top;
-    margin: 15px 15px 0 0;
-    background-image: radial-gradient(#caffd0, #a5535500 75%);
-    padding: 10px;
-}
-
 .gamePage{
     justify-content: center;
     align-items: stretch;

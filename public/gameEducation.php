@@ -10,7 +10,6 @@
 <body class="gameBackground">
 <?php include('_header.php'); ?>
     <main>
-        <img src="assets/images/icone/Education.png" class="gameIcon" alt="icon of a notebook">
         <h2 class="gameBigTittle">Education games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->

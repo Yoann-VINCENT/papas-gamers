@@ -10,7 +10,6 @@
 <body class="gameBackground">
 <?php include('_header.php'); ?>
     <main>
-        <img src="assets/images/icone/Reflexion.png" class="gameIcon" alt="icon of a chess piece">
         <h2 class="gameBigTittle">Reflexion games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
