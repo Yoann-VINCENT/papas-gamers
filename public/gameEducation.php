@@ -90,6 +90,45 @@
                 </section>
             </a>
                 <!-- Cartouche block 6 end-->
+                <!-- Cartouche block 7 start-->
+            <a href="https://cssgridgarden.com/" target="_blank" class="cartoucheAnchor" title="Go to Grid Garden website">
+                <section class="container gameCartouche">
+                    <h3 class="gameTittle">Grid Garden</h3>
+                    <img src="assets/images/game/gridGarden.png" class="gameIllustrationPicture"   alt="gameplay picture of Grid Garden">
+                    <p class="gamePresentationText">Welcome to Grid Garden, where you write CSS code to grow your carrot garden! Water only the areas that have carrots by using the grid-column-start property.
+                        <br>
+                        <br>
+                        <button class="fakePlayButton">PLAY</button>
+                    </p>
+                </section>
+            </a>
+                <!-- Cartouche block 7 end-->
+                <!-- Cartouche block 8 start-->
+            <a href="https://screeps.com/" target="_blank" class="cartoucheAnchor" title="Go to Screeps website">
+                <section class="container gameCartouche">
+                    <h3 class="gameTittle">Screeps</h3>
+                    <img src="assets/images/game/screeps.png" class="gameIllustrationPicture"   alt="gameplay picture of Screeps">
+                    <p class="gamePresentationText">You can think of this game as your digital ant farm where every "ant" is programmed by the player. After setting up a colony and the behavior of your creeps, they will go about their business of exploring the endless game world, collecting resources and fighting enemies even while you are offline.
+                        <br>
+                        <br>
+                        <button class="fakePlayButton">PLAY</button>
+                    </p>
+                </section>
+            </a>
+                <!-- Cartouche block 8 end-->
+                <!-- Cartouche block 9 start-->
+            <a href="https://www.codingame.com/start" target="_blank" class="cartoucheAnchor" title="Go to CodinGame website">
+                <section class="container gameCartouche">
+                    <h3 class="gameTittle">CodinGame</h3>
+                    <img src="assets/images/game/codinGame.jpeg" class="gameIllustrationPicture"   alt="gameplay picture of CodinGame">
+                    <p class="gamePresentationText">A huge collection of games that can all be played in JavaScript, PHP, Ruby, Go, Python, and many other programming languages. The platform includes various puzzle, multiplayer and AI based games, while the code is written in an advanced IDE with Emacs and Vim support.
+                        <br>
+                        <br>
+                        <button class="fakePlayButton">PLAY</button>
+                    </p>
+                </section>
+            </a>
+                <!-- Cartouche block 9 end-->
         </section>
     </main>
 <?php include('_footer.php'); ?>
