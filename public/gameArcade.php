@@ -8,12 +8,12 @@
     <title>Arcade Games</title>
 </head>
 <body class="gameBackground">
-<?php include('assets/ressources/_header.php'); ?>
+    <?php require_once('assets/ressources/_header.php'); ?>
     <main>
         <h2 class="gameBigTittle">Arcade games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to our Whac-A-Mole game">
+            <a href="whack-a-mole.php" target="_blank" class="cartoucheAnchor" title="Go to our Whac-A-Mole game">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Whac-A-Mole</h3>
                     <img src="assets/images/game/whac-a-mole.jpg" class="gameIllustrationPicture"   alt="gameplay picture of our Whac-A-Mole game">
@@ -27,6 +27,7 @@
             <!-- Cartouche block 1 end-->
         </section>
     </main>
-<?php include('assets/ressources/_footer.php'); ?>
+    <?php require_once('assets/ressources/_footer.php'); ?>
+    <script src="assets/js/header.js"></script>
 </body>
 </html>

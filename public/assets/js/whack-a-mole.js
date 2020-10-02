@@ -46,6 +46,7 @@ function createMole(url, coord, grid){
     mole.addEventListener("click", removeImageClickHandler);
     grid[y][x] = true;
     gridContainer.append(mole);
+    setTimeout( removeMole.bind(null, mole), 1000);
 }
 
 function getRandomEmptyPosi(grid){
@@ -71,6 +72,10 @@ function  getRandomURL(){
 
 function removeImageClickHandler(event){
     const mole = event.target;
+    removeMole(mole);
+}
+
+function removeMole(mole){
     const x = mole.dataset.x;
     const y = mole.dataset.y;
     whackGrid[y][x] = null;

@@ -1,3 +1,4 @@
+
 :root{
     --dark: #3d3d3d;
     --light-green: #caffd0;
@@ -6,6 +7,94 @@
     --yellow: #ffca3a;
     --blue: #779be7;
 }
+
+
+/*
+1 Header/Navbar
+ */
+
+header {
+    padding: 10px 15px;
+    height: 50px;
+    background-color: var(--dark);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hamburger-container {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+
+.hamburger-line1, .hamburger-line2, .hamburger-line3 {
+    height: 4px;
+    width: 50px;
+    background-color: var(--troll-body-green);
+    position: absolute;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+.hamburger-line1 {
+    top: 25%;
+}
+
+.hamburger-line2 {
+    top: 50%;
+}
+
+.hamburger-line3 {
+    top: 75%;
+}
+
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--troll-body-green);
+}
+
+.nav-menu {
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--light-green);
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+
+.nav-menu-overlay {
+    background-color: black;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 999;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+}
+
+
+/*
+======================game page==========================================
+ */
 
 .gameBackground{
     background-image: url("../images/game/gameBackground.png");
@@ -130,87 +219,3 @@
     }
 }
 
-/*
-1 Header/Navbar
- */
-
-header {
-    padding: 10px 15px;
-    height: 50px;
-    background-color: var(--dark);
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-/*
-.hamburger-container {
-    width: 50px;
-    height: 50px;
-    position: relative;
-}
-
-
-.hamburger-line, .hamburger-line::before, .hamburger-line::after {
-    display: block;
-    background-color: var(--troll-body-green);
-    position: absolute;
-    height: 4px;
-    width: 50px;
-}
-.hamburger-line::before, .hamburger-line::after {
-    content: " ";
-}
-
-.hamburger-line {
-    top: 50%;
-}
-
-.hamburger-line::before {
-    top: 50px;
-}
-
-.hamburger-line::after {
-    top: 75%;
-}
-*/
-
-
-button {
-    width: 50px;
-    height: 50px;
-    background-color: var(--troll-body-green);
-}
-
-.nav-menu {
-    width: 50%;
-    min-height: 100vh;
-    background-color: var(--light-green);
-    position: absolute;
-    top: 50px;
-    left: -15px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-}
-
-.nav-menu li {
-    padding: 10px;
-}
-
-.nav-menu-overlay {
-    background-color: black;
-    opacity: 0.1;
-    position: fixed;
-    min-height: 100vh;
-    min-width: 100vw;
-}
-
-.logo-icon {
-    width: 45px;
-    height: 45px;
-}
