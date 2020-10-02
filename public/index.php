@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="/assets/style/bootstrap.css">
     <title>Wildest Game</title>
 </head>
 
@@ -41,7 +40,7 @@
         </a>
     </div>
 
-    <p class="catch_phrase">Hey young developer ! </br> Are you bored ? Here you have some games, enjoy it !</p>
+    <p class="catch_phrase">Are you bored young developer ?</p>
 
 
     <div class="articles">
@@ -66,6 +65,28 @@
                 <h5>Mind games</h5>
             </div>
         </section>
+
+        <section class="categorie_cards">
+            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
+            <div class="text_card">
+                <h5>Arcade games</h5>
+            </div>
+        </section>
+
+        <section class="categorie_cards">
+            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
+            <div class="text_card">
+                <h5>Arcade games</h5>
+            </div>
+        </section>
+
+        <section class="categorie_cards">
+            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
+            <div class="text_card">
+                <h5>Arcade games</h5>
+            </div>
+        </section>
+
     </div>
 
 
