@@ -40,7 +40,7 @@
     </a>
 </div>
 
-<p class="catch_phrase">Hey young developer ! </br> Are you boring ? Here you have some games, enjoy it !</p>
+<p class="catch_phrase">Hey young developer ! <br> Are you boring ? Here you have some games, enjoy it !</p>
 
 
 <div class="articles">
