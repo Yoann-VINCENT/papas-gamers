@@ -8,7 +8,7 @@
 }
 
 .gameBackground{
-    background-image: url("assets/images/game/gameBackground.png");
+    background-image: url("../images/game/gameBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -30,6 +30,7 @@
 }
 
 .cartoucheAnchor{
+    text-decoration: none;
     display: inline-block;
     color: white;
     margin: 2em;
