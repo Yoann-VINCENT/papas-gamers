@@ -20,13 +20,13 @@
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div class="carousel-item active banniere">
                 <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="First slide">
             </div>
-            <div class="carousel-item ">
+            <div class="carousel-item banniere">
                 <img class="d-block w-100" src="assets/images/carousel/banniere_2.jpg" alt="Second slide">
             </div>
-            <div class="carousel-item ">
+            <div class="carousel-item banniere">
                 <img class="d-block w-100" src="assets/images/carousel/banniere_3.jpg" alt="Third slide">
             </div>
         </div>
