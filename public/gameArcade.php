@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="bootstrap.css">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="assets/style/index.css">
     <title>Arcade Games</title>
 </head>
 <body class="gameBackground">
-<?php include('_header.php'); ?>
+<?php include('assets/ressources/_header.php'); ?>
     <main>
         <h2 class="gameBigTittle">Arcade games</h2>
         <section  class="gamePage">
@@ -27,6 +27,6 @@
             <!-- Cartouche block 1 end-->
         </section>
     </main>
-<?php include('_footer.php'); ?>
+<?php include('assets/ressources/_footer.php'); ?>
 </body>
 </html>
