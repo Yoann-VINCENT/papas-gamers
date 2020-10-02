@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.css">
     <link rel="stylesheet" href="assets/style/index.css">
     <title>Reflexion Games</title>
 </head>
 <body class="gameBackground">
-<?php include('assets/ressources/_header.php'); ?>
+<?php require_once('assets/ressources/_header.php'); ?>
     <main>
         <h2 class="gameBigTittle">Reflexion games</h2>
         <section  class="gamePage">
@@ -27,6 +27,6 @@
                 <!-- Cartouche block 1 end-->
         </section>
     </main>
-<?php include('assets/ressources/_footer.php'); ?>
+<?php include_once('assets/ressources/_footer.php'); ?>
 </body>
 </html>
