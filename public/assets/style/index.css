@@ -219,3 +219,43 @@ button {
     }
 }
 
+/*
+======================What to Do - Page ==========================================
+ */
+
+.boredBackground{
+    background-image: url("../images/whatToDo/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boredPicture{
+    object-fit: contain;
+    margin-top: 5px;
+    border-radius: 20%;
+}
+
+.boredCartouche{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: #caffd055;
+}
+
+.boredDescription{
+    padding: 30px;
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
+
+.boredTittle{
+    margin: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+}
