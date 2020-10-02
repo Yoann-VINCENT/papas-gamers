@@ -232,6 +232,7 @@ button {
 .boredPicture{
     object-fit: contain;
     border-radius: 20%;
+    margin: 0 5px 0 5px;
 }
 
 .boredCartouche{
@@ -257,4 +258,21 @@ button {
     margin: 25px;
     font-family: 'Dancing Script', cursive;
     font-size: 30px;
+}
+
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+    .boredPage{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .boredCartouche{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 30%;
+        margin: 20px;
+    }
 }
