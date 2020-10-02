@@ -231,7 +231,6 @@ button {
 
 .boredPicture{
     object-fit: contain;
-    margin-top: 5px;
     border-radius: 20%;
 }
 
