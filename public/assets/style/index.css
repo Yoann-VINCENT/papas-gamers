@@ -238,8 +238,6 @@ button {
 .boredCartouche{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin-top: 1.5em;
     padding: 10px;
     border-radius: 20%;
@@ -257,7 +255,10 @@ button {
 .boredTittle{
     margin: 25px;
     font-family: 'Dancing Script', cursive;
-    font-size: 30px;
+    font-size: 34px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
 }
 
 @media only screen and (min-width: 600px) and (min-height: 400px) {
