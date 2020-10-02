@@ -46,25 +46,36 @@
 <div class="articles">
 
     <section class="categorie_cards">
-        <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
+        <a href="gameArcade.php">
+            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
+        </a>
         <div class="text_card">
             <h5>Arcade games</h5>
         </div>
     </section>
 
+
+
     <section class="categorie_cards">
-        <img src="assets/images/icone/Education_resize.png" alt="icone of education games">
+        <a href="gameEducation.php">
+            <img src="assets/images/icone/Education_resize.png" alt="icone of education games">
+        </a>
         <div class="text_card">
             <h5>Educatives games</h5>
         </div>
     </section>
 
+
+
     <section class="categorie_cards">
-        <img src="assets/images/icone/Reflexion_resize.png" alt="icone of mind games">
+        <a href="gameReflexion.php">
+            <img src="assets/images/icone/Reflexion_resize.png" alt="icone of mind games">
+        </a>
         <div class="text_card">
             <h5>Mind games</h5>
         </div>
     </section>
+
 
 
 
