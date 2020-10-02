@@ -7,9 +7,10 @@
                 </div>
                 <ul class="nav-menu">
                     <li> <a>Meet the papas</a> </li>
-                    <li> <a>Arcade games</a> </li>
-                    <li> <a>Puzzle games</a> </li>
-                    <li> <a>Coding games</a> </li>
+                    <li> <a href="/index.php">Home</a> </li>
+                    <li> <a href="/gameArcade.php">Arcade games</a> </li>
+                    <li> <a href="/gameReflexion.php">Puzzle games</a> </li>
+                    <li> <a href="/gameEducation.php">Coding games</a> </li>
                 </ul>
             </nav>
             <img class="logo-icon" src="/assets/images/icone/troll.png">
