@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link href="whack-a-mole.css" type="text/css" rel="stylesheet">
+        <link href="assets/style/whack-a-mole.css" type="text/css" rel="stylesheet">
     </head>
     <body>
         <div>
@@ -14,6 +14,6 @@
             </div>
         </div>
 
-        <script src="./whack-a-mole.js"></script>
+        <script src="assets/js/whack-a-mole.js"></script>
     </body>
 </html>

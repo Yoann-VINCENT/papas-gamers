@@ -8,8 +8,13 @@ endButton.addEventListener("click", endGameClickHandler);
 
 const GAME_DIFFICULTY = {
     EASY: 4,
-    NORMAL:"",
+    NORMAL: 10,
+    HARD: 15,
+    ULTIMATE: 1
 }
+
+const GAME_DURATION = 60*1000;
+
 
 let whackGrid = [
   [null, null, null, null],
@@ -43,7 +48,6 @@ function createMole(url, coord, grid){
     gridContainer.append(mole);
 }
 
-//works
 function getRandomEmptyPosi(grid){
     const gridSize = grid.length;
     let coord = null;
@@ -56,13 +60,13 @@ function getRandomEmptyPosi(grid){
 }
 
 function  getRandomURL(){
-    const url = [
+    const urls = [
         "./assets/images/whack-a-mole/pierre.png",
         "./assets/images/whack-a-mole/matthieu.png",
         "./assets/images/whack-a-mole/thomas.png"
     ];
     const randomIndex = Math.floor( Math.random()*3 );
-    return url[randomIndex];
+    return urls[randomIndex];
 }
 
 function removeImageClickHandler(event){
@@ -73,29 +77,30 @@ function removeImageClickHandler(event){
     mole.remove();
 }
 
-function endGameClickHandler(){
-    continueGame = false;
-}
-
 function randomTimer(){
     return Math.random()*1500 + 4;
 }
 
 function startGame(){
+    gridContainer.innerHTML = null;
+    gridContainer.classList.add("size-easy")
+    whackGrid = createGrid(4);
     continueGame = true;
     launchGame();
 }
 
-/*
-function createWhackGrid(size){
-    return new Array(size).fill(new Array(size));
+function endGameClickHandler(){
+    continueGame = false;
 }
-whackGrid = createWhackGrid(10);
-whackGrid[0][1] = 2;
-console.log(whackGrid);
-*/
 
 
+function createGrid(size){
+    const grid = new Array(size);
+    for(let i=0; i<size; i++){
+        grid[i] = new Array(size).fill(null);
+    }
+    return grid;
+}
 
 
 /*
@@ -157,7 +162,6 @@ class Person {
     constructor(x, y, person) {
         this.x = x;
         this.y = y;
-
     }
 }
 
