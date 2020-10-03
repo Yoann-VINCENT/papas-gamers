@@ -25,10 +25,12 @@
                 <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="First slide">
             </div>
             <div class="carousel-item banniere">
-                <img class="d-block w-100" src="assets/images/carousel/banniere_2.jpg" alt="Second slide">
+                <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="Second slide">
             </div>
             <div class="carousel-item banniere">
-                <img class="d-block w-100" src="assets/images/carousel/banniere_3.jpg" alt="Third slide">
+                <a href="aboutUs.php">
+                <img class="d-block w-100 go_to_about_us" src="assets/images/carousel/banniere_3.jpg" alt="Third slide">
+                </a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -41,54 +43,43 @@
         </a>
     </div>
 
-    <p class="catch_phrase">Are you bored young developer ?</p>
 
+        <div class="catch_phrase">
+            <p class="choose_category">Choose a game category</p>
+        </div>
+
+    <b class="hr"></b>
 
     <div class="articles">
 
         <section class="categorie_cards">
-            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
-            <div class="text_card">
-                <h5>Arcade games</h5>
-            </div>
+            <a class="go_to_category" href="gameArcade.php">
+            <img src="assets/images/icone/Arcade.png" alt="icone of arcade games">
+                    <h5 class="black-text-shadow">Arcade games</h5>
+            </a>
         </section>
 
         <section class="categorie_cards">
-            <img src="assets/images/icone/Education_resize.png" alt="icone of education games">
+            <a class="go_to_category" href="gameEducation.php">
+            <img src="assets/images/icone/Education.png" alt="icone of education games">
             <div class="text_card">
-                <h5>Educatives games</h5>
+                <h5 class="black-text-shadow">Educative games</h5>
             </div>
+            </a>
         </section>
 
         <section class="categorie_cards">
-            <img src="assets/images/icone/Reflexion_resize.png" alt="icone of mind games">
+            <a class="go_to_category" href="gameReflexion.php">
+            <img src="assets/images/icone/Mind.png" alt="icone of mind games">
             <div class="text_card">
-                <h5>Mind games</h5>
+                <h5 class="black-text-shadow">Mind games</h5>
             </div>
-        </section>
-
-        <section class="categorie_cards">
-            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
-            <div class="text_card">
-                <h5>Arcade games</h5>
-            </div>
-        </section>
-
-        <section class="categorie_cards">
-            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
-            <div class="text_card">
-                <h5>Arcade games</h5>
-            </div>
-        </section>
-
-        <section class="categorie_cards">
-            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
-            <div class="text_card">
-                <h5>Arcade games</h5>
-            </div>
+            </a>
         </section>
 
     </div>
+
+    <div class="scallop-down"></div>
 
 
     <?php include ('assets/ressources/_footer.php') ?>

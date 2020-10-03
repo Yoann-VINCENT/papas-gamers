@@ -5,6 +5,8 @@
     --dark-green: #4a7c59;
     --yellow: #ffca3a;
     --blue: #779be7;
+    --bg: #10111F;
+    --barsize: 15px;
 }
 /*
 1 Header/Navbar
@@ -214,42 +216,75 @@ button {
 }
 
 /*
-Catch phrase & games categories
+Carousel effects
 */
 
+.go_to_about_us:hover{
+    opacity: 80%;
+}
+
+/*
+Catch phrase & games categories
+*/
 .catch_phrase{
+    background: var(--light-green);
+}
+
+
+.choose_category {
     text-align: center;
-    font-size: 25px;
-    margin-top: 20px;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
 
 .articles{
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+    background-color: var(--light-green);
 }
 
 .categorie_cards{
-    border: #1b1e21 1px solid;
     border-radius: 15px;
     text-align: center;
     width: 100%;
     padding: 10px;
     margin: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-image: url("../images/cards/card_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categorie_cards:hover{
+    opacity: 50%;
+    cursor: pointer;
 }
 
 .text_card{
+    color: white;
     padding-top: 5px;
 }
 
-/*
-Carousel
- */
+.black-text-shadow{
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
 
-.banniere{
-    width: 100%;
-    height: 500px;
-    object-fit: cover;
+.go_to_category, .go_to_category:link, .go_to_category:hover{
+    color: white;
+    text-decoration: none;
+    font-family: "Comic Sans MS";
+
+}
+
+.scallop-down{
+    height:100px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(var(--light-green)), color-stop(0.49, var(--light-green)), color-stop(0.51, #fff), to(white));
+    -webkit-background-size: 49px 100%;
 }
 
 /*
@@ -268,15 +303,15 @@ Responsive design
     }
 }
 
-@media screen and (min-width : 600px){
+@media screen and (min-width : 600px) {
 
-    .articles{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
 
     .categorie_cards {
-    width: 45%;
+        width: 45%;
     }
 }
