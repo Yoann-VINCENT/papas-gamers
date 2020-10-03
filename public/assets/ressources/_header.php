@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <title>Les papagamers</title>
         <link href="../style/bootstrap.css" type="text/css" rel="stylesheet">
@@ -17,7 +17,7 @@
                     <li> <a>Coding games</a> </li>
                 </ul>
             </nav>
-            <img class="logo-icon" src="../images/icone/troll.png">
+            <img class="logo-icon" src="../images/icone/troll.png" alt="troll logo">
             <button class="login">Login</button>
         </header>
         <div class="nav-menu-overlay"></div>
