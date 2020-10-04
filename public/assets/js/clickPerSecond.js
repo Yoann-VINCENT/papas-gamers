@@ -32,6 +32,7 @@ function startGame()
             }
         }, 1);
     }
+
 function endGame()
     {
         let clicsBySeconds = (score / duration).toFixed(2);
@@ -53,3 +54,16 @@ function endGame()
 
         }, 30);
     }
+
+// Event listener on the start button
+startBtn.addEventListener("click", function() {
+    startGame();
+});
+
+// Event listener on the click's in area
+clickArea.addEventListener("click", function() {
+    if (!isEnded) {
+        score++;
+        scoreTxt.textContent = score;
+    }
+});
