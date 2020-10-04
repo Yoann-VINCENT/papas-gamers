@@ -28,7 +28,9 @@
                 <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="Second slide">
             </div>
             <div class="carousel-item ">
-                <img class="d-block w-100" src="assets/images/carousel/banniere_3.jpg" alt="Third slide">
+                <a href="aboutUs.php">
+                    <img class="d-block w-100 go_to_about_us" src="assets/images/carousel/banniere_3.jpg" alt="Third slide">
+                </a>
             </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
