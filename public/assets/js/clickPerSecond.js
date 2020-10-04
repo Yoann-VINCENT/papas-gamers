@@ -1,5 +1,5 @@
 let score  = 0;
-let duration = 10; //milliseconds convert to seconds -> ie I convert in second later so duration has to be set on 10 !
+let duration = 5; //milliseconds convert to seconds -> ie I convert in second later so duration has to be set on 10 !
 let startTime = new Date().getTime();
 let isEnded = true;
 
@@ -7,6 +7,7 @@ let timerTxt = document.querySelector("#timer");
 let scoreTxt = document.querySelector("#score");
 let startBtn = document.querySelector("#start");
 let clickArea = document.querySelector("#clickArea");
+let finalScoreTxt = document.querySelector("#scoretxt");
 
 startBtn.addEventListener("click", function()
         {
@@ -32,7 +33,7 @@ function startGame()
     isEnded = false;
     startTime = new Date().getTime();
 
-    //Timer -> everything in milliseconds !
+    //Timer
     let timer = setInterval(function()
         {
         let currentTime = (new Date().getTime() - startTime)/1000;
@@ -51,19 +52,18 @@ function endGame()
         let clicsBySeconds = (score / duration).toFixed(1);
         timerTxt.textContent = duration.toFixed(1);
         startBtn.style.display = 'inline';
+        startBtn.textContent = "Try again";
+        startBtn.style.height = '100px';
+        finalScoreTxt.style.backgroundColor = '#3d3d3d99';
 
-        setTimeout(function()
-        {
             if (clicsBySeconds <= 5.0) {
-                alert(`Ok... That's... lower than I expected... You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`);
+                finalScoreTxt.textContent = `Ok... That's... lower than I expected... You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`;
             } else if (clicsBySeconds <= 7.5) {
-                alert(`Not bad ! You are a good average clicker ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`);
+                finalScoreTxt.textContent = `Not bad ! You are a good average clicker ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`;
             } else if (clicsBySeconds <= 9.9) {
-                alert(`Hohoho ! You are among the few who can pretend to the tittle of "hard clickers" ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`);
+                finalScoreTxt.textContent = `Hohoho ! You are among the few who can pretend to the tittle of "hard clickers" ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`;
             } else {
-                alert(`No way ! You are a monster ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. That's insane !! Try again please !`);
+                finalScoreTxt.textContent = `No way ! You are a monster ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. That's insane !! Try again please !`;
             }
-
-        }, 30);
     }
 
