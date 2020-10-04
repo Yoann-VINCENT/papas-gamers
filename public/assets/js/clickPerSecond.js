@@ -28,7 +28,28 @@ function startGame()
         } else {
             isEnded = true;
             clearInterval(timer);
-            endGame(); // to define...
+            endGame();
             }
         }, 1);
+    }
+function endGame()
+    {
+        let clicsBySeconds = (score / duration).toFixed(2);
+        timerTxt.textContent = duration.toFixed(2);
+        clicksTxt.textContent = clicsBySeconds;
+        startBtn.style.display = 'inline';
+
+        setTimeout(function()
+        {
+            if (score <= 50) {
+                alert(`Ok... That's... lower than I expected... You made ${score} in ${duration} ! It's ${clicsBySeconds}. Try again!`);
+            } else if (score <= 75) {
+                alert(`Almost 75 ! Not bad ! You made ${score} in ${duration} ! It's ${clicsBySeconds}. Try again!`);
+            } else if (score <= 99) {
+                alert(`Hohoho ! You are among the few who can pretend to the tittle of "hard clickers" ! You made ${score} in ${duration} ! It's ${clicsBySeconds}. Try again!`);
+            } else {
+                alert(`No way ! You are a monster ! You made ${score} in ${duration} ! It's ${clicsBySeconds}. That's insane !! Try again please !`);
+            }
+
+        }, 30);
     }
