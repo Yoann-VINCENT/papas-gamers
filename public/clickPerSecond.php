@@ -13,9 +13,8 @@
             <button id="start">Start</button>
         </div>
         <div id="container">
-            Timer : <span id="timer"></span><br/>
-            Score : <span id="score"></span><br/>
-            Clicks/s : <span id="clicks"></span>
+            Timer : <span id="timer">0</span> sec.<br/>
+            Score : <span id="score">0</span> clicks.<br/>
         </div>
         <script src="assets/js/clickPerSecond.js"></script>
         <script src="assets/js/header.js"></script>

@@ -1,30 +1,43 @@
 let score  = 0;
-let duration = 10000; //milliseconds !
+let duration = 10; //milliseconds convert to seconds -> ie I convert in second later so duration has to be set on 10 !
 let startTime = new Date().getTime();
 let isEnded = true;
 
 let timerTxt = document.querySelector("#timer");
 let scoreTxt = document.querySelector("#score");
-let clicksTxt = document.querySelector("#clicks");
 let startBtn = document.querySelector("#start");
 let clickArea = document.querySelector("#clickArea");
+
+startBtn.addEventListener("click", function()
+        {
+            startGame();
+        }
+    );
+
+clickArea.addEventListener("click", function()
+        {
+            if (!isEnded) {
+                score++;
+                scoreTxt.textContent = score;
+            }
+        }
+    );
 
 //Functions Start & Stop
 
 function startGame()
     {
     startBtn.style.display = 'none';
-    score = 0;
+    score = -1;
     isEnded = false;
     startTime = new Date().getTime();
 
     //Timer -> everything in milliseconds !
     let timer = setInterval(function()
         {
-        let currentTime = (new Date().getTime() - startTime);
+        let currentTime = (new Date().getTime() - startTime)/1000;
         if (currentTime < duration) {
-            timerTxt.textContent = currentTime.toFixed(2);
-            clicksTxt.textContent = (score / currentTime).toFixed(2);
+            timerTxt.textContent = currentTime.toFixed(1);
         } else {
             isEnded = true;
             clearInterval(timer);
@@ -35,35 +48,22 @@ function startGame()
 
 function endGame()
     {
-        let clicsBySeconds = (score / duration).toFixed(2);
-        timerTxt.textContent = duration.toFixed(2);
-        clicksTxt.textContent = clicsBySeconds;
+        let clicsBySeconds = (score / duration).toFixed(1);
+        timerTxt.textContent = duration.toFixed(1);
         startBtn.style.display = 'inline';
 
         setTimeout(function()
         {
-            if (score <= 50) {
-                alert(`Ok... That's... lower than I expected... You made ${score} in ${duration} ! It's ${clicsBySeconds}. Try again!`);
-            } else if (score <= 75) {
-                alert(`Almost 75 ! Not bad ! You made ${score} in ${duration} ! It's ${clicsBySeconds}. Try again!`);
-            } else if (score <= 99) {
-                alert(`Hohoho ! You are among the few who can pretend to the tittle of "hard clickers" ! You made ${score} in ${duration} ! It's ${clicsBySeconds}. Try again!`);
+            if (clicsBySeconds <= 5.0) {
+                alert(`Ok... That's... lower than I expected... You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`);
+            } else if (clicsBySeconds <= 7.5) {
+                alert(`Not bad ! You are a good average clicker ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`);
+            } else if (clicsBySeconds <= 9.9) {
+                alert(`Hohoho ! You are among the few who can pretend to the tittle of "hard clickers" ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. Try again!`);
             } else {
-                alert(`No way ! You are a monster ! You made ${score} in ${duration} ! It's ${clicsBySeconds}. That's insane !! Try again please !`);
+                alert(`No way ! You are a monster ! You made ${score} clicks in ${duration} seconds ! It's ${clicsBySeconds} clicks per second. That's insane !! Try again please !`);
             }
 
         }, 30);
     }
 
-// Event listener on the start button
-startBtn.addEventListener("click", function() {
-    startGame();
-});
-
-// Event listener on the click's in area
-clickArea.addEventListener("click", function() {
-    if (!isEnded) {
-        score++;
-        scoreTxt.textContent = score;
-    }
-});
