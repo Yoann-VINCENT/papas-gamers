@@ -1,3 +1,4 @@
+
 :root{
     --dark: #3d3d3d;
     --light-green: #caffd0;
@@ -92,6 +93,94 @@ button {
     width: 45px;
     height: 45px;
 }
+
+
+/*
+1 Header/Navbar
+ */
+
+header {
+    padding: 10px 15px;
+    height: 50px;
+    background-color: var(--dark);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hamburger-container {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+
+.hamburger-line1, .hamburger-line2, .hamburger-line3 {
+    height: 4px;
+    width: 50px;
+    background-color: var(--troll-body-green);
+    position: absolute;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+.hamburger-line1 {
+    top: 25%;
+}
+
+.hamburger-line2 {
+    top: 50%;
+}
+
+.hamburger-line3 {
+    top: 75%;
+}
+
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--troll-body-green);
+}
+
+.nav-menu {
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--light-green);
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+
+.nav-menu-overlay {
+    background-color: black;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 999;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+}
+
+
+/*
+======================game page==========================================
+ */
 
 .gameBackground{
     background-image: url("../images/game/gameBackground.png");
@@ -215,17 +304,13 @@ button {
     }
 }
 
-/*
-Carousel effects
-*/
+/* ========== Carousel effects ========== */
 
 .go_to_about_us:hover{
     opacity: 80%;
 }
 
-/*
-Catch phrase & games categories
-*/
+/* ========== Catch phrase ========== */
 .catch_phrase{
     background: var(--light-green);
 }
@@ -239,7 +324,7 @@ Catch phrase & games categories
     margin: 0;
     text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
 }
-
+/* ========== Game categories ========== */
 .articles{
     display: flex;
     flex-wrap: wrap;
@@ -276,8 +361,6 @@ Catch phrase & games categories
 .go_to_category, .go_to_category:link, .go_to_category:hover{
     color: white;
     text-decoration: none;
-    font-family: "Comic Sans MS";
-
 }
 
 .scallop-down{
