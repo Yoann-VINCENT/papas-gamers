@@ -1,5 +1,5 @@
 
-.cpsbackground{
+.cpsBackground{
     background-color: #3d3d3d;
     display: flex;
     flex-direction: column;
@@ -21,7 +21,7 @@
     text-shadow: 2px 2px 40px #caffd0;
 }
 
-#clickarea {
+#clickArea {
     background-image: url("https://media.giphy.com/media/104ueR8J1OPM2s/giphy.gif");
     background-repeat: no-repeat;
     background-size: cover;

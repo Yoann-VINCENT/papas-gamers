@@ -7,9 +7,9 @@
         <link href="assets/style/clickPerSecond.css" type="text/css" rel="stylesheet">
         <title>Click per second Game</title>
     </head>
-    <body class="cpsbackground">
+    <body class="cpsBackground">
     <?php //require_once("assets/ressources/_header.php"); ?>
-        <div id="clickarea">
+        <div id="clickArea">
             <button id="start">Start</button>
         </div>
         <div id="container">
