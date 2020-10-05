@@ -29,6 +29,7 @@ clickArea.addEventListener("click", function()
 function startGame()
     {
     startBtn.style.display = 'none';
+    finalScoreTxt.style.display = 'none';
     score = -1;
     isEnded = false;
     startTime = new Date().getTime();
@@ -54,6 +55,7 @@ function endGame()
         startBtn.style.display = 'inline';
         startBtn.textContent = "Try again";
         startBtn.style.height = '100px';
+        finalScoreTxt.style.display = 'inline';
         finalScoreTxt.style.backgroundColor = '#3d3d3d99';
 
             if (clicsBySeconds <= 5.0) {

@@ -8,7 +8,7 @@
         <title>Click per second Game</title>
     </head>
     <body class="cpsBackground">
-    <?php //require_once("assets/ressources/_header.php"); ?>
+    <?php require_once("assets/ressources/_header.php"); ?>
         <h2 class="gameBigTittle">Frenzy clicker</h2>
         <div id="clickArea">
             <button id="start">Start</button>
