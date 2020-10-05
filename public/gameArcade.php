@@ -25,6 +25,19 @@
                 </section>
             </a>
             <!-- Cartouche block 1 end-->
+            <!-- Cartouche block 2 start-->
+            <a href="clickPerSecond.php" target="_blank" class="cartoucheAnchor" title="Go to our click per seconds game">
+                <section class="container gameCartouche">
+                    <h3 class="gameTittle">Frenzy clicker</h3>
+                    <img src="assets/images/game/click.png" class="gameIllustrationPicture"   alt="gameplay picture of our click per seconds game">
+                    <p class="gamePresentationText">CPS or clicks per second represents a number of times that a person can click using their mouse during a specific period of time measured in seconds.
+                        <br>
+                        <br>
+                        <button class="fakePlayButton">PLAY</button>
+                    </p>
+                </section>
+            </a>
+            <!-- Cartouche block 2 end-->
         </section>
     </main>
     <?php require_once('assets/ressources/_footer.php'); ?>
