@@ -3,11 +3,12 @@ let duration = 5; //milliseconds convert to seconds -> ie I convert in second la
 let startTime = new Date().getTime();
 let isEnded = true;
 
-let timerTxt = document.querySelector("#timer");
-let scoreTxt = document.querySelector("#score");
-let startBtn = document.querySelector("#start");
-let clickArea = document.querySelector("#clickArea");
-let finalScoreTxt = document.querySelector("#scoretxt");
+const timerTxt = document.querySelector("#timer");
+const scoreTxt = document.querySelector("#score");
+const startBtn = document.querySelector("#start");
+const clickArea = document.querySelector("#clickArea");
+const finalScoreTxt = document.querySelector("#scoretxt");
+
 
 function showButton(){
     startBtn.style.display = 'inline';
