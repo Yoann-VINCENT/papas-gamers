@@ -31,6 +31,7 @@
                     <h3 class="gameTittle">Frenzy clicker</h3>
                     <img src="/assets/images/game/click.png" class="gameIllustrationPicture"   alt="gameplay picture of our click per seconds game">
                     <p class="gamePresentationText">CPS or clicks per second represents a number of times that a person can click using their mouse during a specific period of time measured in seconds.
+
                         <br>
                         <br>
                         <button class="fakePlayButton">PLAY</button>
@@ -38,6 +39,19 @@
                 </section>
             </a>
             <!-- Cartouche block 2 end-->
+            <!-- Cartouche block 3 start-->
+            <a href="flappyBird.php" target="_blank" class="cartoucheAnchor" title="Go to our flappy bird game">
+                <section class="container gameCartouche">
+                    <h3 class="gameTittle">Flappy bird</h3>
+                    <img src="assets/images/game/flappy-bird.png" class="gameIllustrationPicture"   alt="gameplay picture of our click per seconds game">
+                    <p class="gamePresentationText">Flappy bird is a very simple game, you just have to make your bird fly by clicking on the screen to get the pipes that get in your way.
+                        <br>
+                        <br>
+                        <button class="fakePlayButton">PLAY</button>
+                    </p>
+                </section>
+            </a>
+            <!-- Cartouche block 3 end-->
         </section>
     </main>
     <?php require_once('/assets/ressources/_footer.php'); ?>
