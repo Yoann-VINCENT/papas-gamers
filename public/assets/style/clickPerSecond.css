@@ -8,7 +8,10 @@
 }
 
 .cpsBackground{
-    background-color: var(--dark);
+    background-image: url("/assets/images/game/clickbackground.png");
+}
+
+.cpsGameSection{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -23,6 +26,7 @@
     font-size: 2em;
     text-align: center;
     margin-top: 50px;
+    margin-bottom: 50px;
     padding: 20px;
     user-select: none;
     color: var(--light-green);
