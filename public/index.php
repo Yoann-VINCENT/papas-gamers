@@ -22,10 +22,14 @@
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="First slide">
+                <a href="whatToDo.php">
+                <img class="d-block w-100 go_to_what_to_do" src="assets/images/carousel/banniere_1.jpg" alt="First slide">
+                </a>
             </div>
             <div class="carousel-item ">
-                <img class="d-block w-100" src="assets/images/carousel/banniere_2.jpg" alt="Second slide">
+                <a href="whack-a-mole.php">
+                <img class="d-block w-100 go_to_whack_a_mole" src="assets/images/carousel/banniere_2.jpg" alt="Second slide">
+                </a>
             </div>
             <div class="carousel-item ">
                 <a href="aboutUs.php">

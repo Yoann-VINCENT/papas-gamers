@@ -306,6 +306,13 @@ button {
 }
 
 /* ========== Carousel effects ========== */
+.go_to_what_to_do:hover{
+    opacity: 80%;
+}
+
+.go_to_whack_a_mole:hover{
+    opacity: 80%;
+}
 
 .go_to_about_us:hover{
     opacity: 80%;
