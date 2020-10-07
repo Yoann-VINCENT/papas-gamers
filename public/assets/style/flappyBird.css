@@ -3,12 +3,17 @@
     margin: 0;
 }
 
+.flappy_background{
+    background-image: url("../images/flappyBird/terraria_background.jpg");
+}
+/*
 #game{
     width: 400px;
     height: 500px;
     border: 1px solid black;
     margin: auto;
     overflow: hidden;
+    background-color: white;
 }
 
 #block{
