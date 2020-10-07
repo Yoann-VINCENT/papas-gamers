@@ -23,7 +23,7 @@
             <script src="assets/js/clickPerSecond.js"></script>
             <script src="assets/js/header.js"></script>
         </section>
-        <?php include ('assets/ressources/_footer.php'); ?>
+        <?php require_once('assets/ressources/_footer.php'); ?>
     </body>
 
 </html>
