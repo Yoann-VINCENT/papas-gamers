@@ -9,8 +9,14 @@
     }
 }
 
+body {
+    background-color: cyan;
+    background-image: url("/assets/images/whack-a-mole/background-terraria.jpg");
+    background-size: cover;
+}
+
 .game-container{
-    margin: 0 auto;
+    margin: 20px auto 0;
     text-align: center;
     width: var(--gridSize);
 
@@ -19,7 +25,7 @@
 .container-whack {
     height: var(--gridSize);
     display: grid;
-    background-color: var(--dark-green);
+    background-color: #127caf80;
     grid-template-columns: repeat( var(--nbColumns), calc(var(--gridSize) / var(--nbColumns) ));
     grid-template-rows: repeat( var(--nbColumns) , calc( var(--gridSize) / var(--nbColumns) ));
 }
