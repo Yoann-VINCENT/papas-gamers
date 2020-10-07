@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="/assets/style/bootstrap.css">
     <link rel="stylesheet" href="/assets/style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <title>What to Do</title>
+    <title>About Us</title>
 </head>
 <body class="aboutUsBackground">
     <?php require_once('assets/ressources/_header.php'); ?>
