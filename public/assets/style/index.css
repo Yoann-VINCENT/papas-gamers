@@ -107,10 +107,10 @@ button {
     font-size: 2.2em;
     text-align: center;
     width: 100%;
-    background: linear-gradient(to right, #a5535500 5%, #4a7c59, #a5535500 95%);
+    background: linear-gradient(to right, #a5535500 5%, var(--dark-green), #a5535500 95%);
     padding: 10px;
     color: white;
-    text-shadow: 1px 1px 5px #3d3d3d;
+    text-shadow: 1px 1px 5px var(--dark);
 }
 
 .gamePage{
@@ -137,24 +137,24 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 1.5em;
-    border: solid #3d3d3d 2px;
+    border: solid var(--dark) 2px;
     padding: 10px;
     border-radius: 15px;
-    background-color: #3d3d3d;
-    box-shadow: 5px 5px 20px #caffd0;
+    background-color: var(--dark);
+    box-shadow: 5px 5px 20px var(--light-green);
 }
 
 .gameTittle{
     width: 100%;
-    color: #8bc34a;
-    text-shadow: 1px 1px 2px #caffd0;
+    color: var(--troll-body-green);
+    text-shadow: 1px 1px 2px var(--light-green);
 }
 
 .gameIllustrationPicture{
     border-radius: 15px;
-    border: solid #3d3d3d 2px;
+    border: solid var(--dark) 2px;
     object-fit: contain;
-    filter: drop-shadow(1px 1px 2px #caffd0);
+    filter: drop-shadow(1px 1px 2px var(--light-green));
     margin-top: 5px;
 }
 
@@ -162,7 +162,7 @@ button {
     width: 50%;
     height: 35px;
     text-align: center;
-    background-color: #8bc34a;
+    background-color: var(--troll-body-green);
     border-radius: 15px;
     font-weight: bold;
     font-size: 1.3em;
@@ -215,7 +215,7 @@ button {
         justify-content: space-between;
     }
     .gameBigTittle{
-        background: linear-gradient(to right, #a5535500 30%, #4a7c59, #a5535500 70%);
+        background: linear-gradient(to right, #a5535500 30%, var(--dark-green), #a5535500 70%);
     }
 }
 
@@ -241,7 +241,7 @@ button {
     margin-top: 1.5em;
     padding: 10px;
     border-radius: 20%;
-    background-color: #caffd055;
+    background-color: var(--dark-green);
 }
 
 .boredDescription{
