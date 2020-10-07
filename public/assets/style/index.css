@@ -1,3 +1,4 @@
+
 :root{
     --dark: #3d3d3d;
     --light-green: #caffd0;
@@ -5,130 +6,12 @@
     --dark-green: #4a7c59;
     --yellow: #ffca3a;
     --blue: #779be7;
+    --transparent: #4a7c5988;
+    --darkTransparent: #3d3d3dee;
+    --light-greenTransparent: #caffd055;
+    --bg: #10111F;
+    --barsize: 15px;
 }
-
-.gameBackground{
-    background-image: url("assets/images/game/gameBackground.png");
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.gameBigTittle{
-    margin-top: 50px;
-    font-size: 2.2em;
-    text-align: center;
-    width: 100%;
-    background: linear-gradient(to right, #a5535500 5%, #4a7c59, #a5535500 95%);
-    padding: 10px;
-    color: white;
-    text-shadow: 1px 1px 5px #3d3d3d;
-}
-
-.gamePage{
-    justify-content: center;
-    align-items: stretch;
-}
-
-.cartoucheAnchor{
-    display: inline-block;
-    color: white;
-    margin: 2em;
-    max-width: 800px;
-}
-.cartoucheAnchor:hover{
-    color: white;
-    text-decoration: none;
-    opacity: 0.95;
-}
-
-.gameCartouche{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    margin-top: 1.5em;
-    border: solid #3d3d3d 2px;
-    padding: 10px;
-    border-radius: 15px;
-    background-color: #3d3d3d;
-    box-shadow: 5px 5px 20px #caffd0;
-}
-
-.gameTittle{
-    width: 100%;
-    color: #8bc34a;
-    text-shadow: 1px 1px 2px #caffd0;
-}
-
-.gameIllustrationPicture{
-    border-radius: 15px;
-    border: solid #3d3d3d 2px;
-    object-fit: contain;
-    filter: drop-shadow(1px 1px 2px #caffd0);
-    margin-top: 5px;
-}
-
-.fakePlayButton{
-    width: 50%;
-    height: 35px;
-    text-align: center;
-    background-color: #8bc34a;
-    border-radius: 15px;
-    font-weight: bold;
-    font-size: 1.3em;
-}
-
-.gamePresentationText{
-    padding: 10px 20px 10px 30px;
-    text-align: justify;
-    text-align-last: center;
-}
-
-@media (orientation: landscape) {
-    .cartoucheAnchor{
-        width: auto;
-    }
-    .gameIllustrationPicture{
-        max-width: 50%;
-    }
-    .gamePresentationText{
-        max-width: 50%;
-    }
-    .fakePlayButton{
-        margin-left: auto;
-    }
-}
-
-@media (orientation: portrait) {
-    .gameCartouche{
-        flex-direction: column;
-    }
-    .gameIllustrationPicture{
-        max-height: 50%;
-        max-width: 100%;
-    }
-    .gamePresentationText{
-        max-height: 50%;
-    }
-}
-
-@media only screen and (min-width: 600px) {
-    .gamePage{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .cartoucheAnchor{
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-    .gameBigTittle{
-        background: linear-gradient(to right, #a5535500 30%, #4a7c59, #a5535500 70%);
-    }
-}
-
 /*
 1 Header/Navbar
  */
@@ -217,3 +100,466 @@ header {
     width: 45px;
     height: 45px;
 }
+
+
+/*
+1 Header/Navbar
+ */
+
+header {
+    padding: 10px 15px;
+    height: 50px;
+    background-color: var(--dark);
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.hamburger-container {
+    width: 50px;
+    height: 50px;
+    position: relative;
+}
+
+
+.hamburger-line1, .hamburger-line2, .hamburger-line3 {
+    height: 4px;
+    width: 50px;
+    background-color: var(--troll-body-green);
+    position: absolute;
+    transform: translateY(-50%);
+    border-radius: 5px;
+}
+
+.hamburger-line1 {
+    top: 25%;
+}
+
+.hamburger-line2 {
+    top: 50%;
+}
+
+.hamburger-line3 {
+    top: 75%;
+}
+
+
+button {
+    width: 50px;
+    height: 50px;
+    background-color: var(--troll-body-green);
+}
+
+.nav-menu {
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--light-green);
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+}
+
+.nav-menu li {
+    padding: 10px;
+}
+
+.nav-menu-overlay {
+    background-color: black;
+    opacity: 0.1;
+    position: absolute;
+    z-index: 999;
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+.logo-icon {
+    width: 45px;
+    height: 45px;
+}
+
+
+/*
+======================game page==========================================
+ */
+
+.gameBackground{
+    background-image: url("../images/game/gameBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.gameBigTittle{
+    margin-top: 50px;
+    font-size: 2.2em;
+    text-align: center;
+    width: 100%;
+    background: linear-gradient(to right, #a5535500 5%, var(--dark-green), #a5535500 95%);
+    padding: 10px;
+    color: white;
+    text-shadow: 1px 1px 5px var(--dark);
+}
+
+.gamePage{
+    justify-content: center;
+    align-items: stretch;
+}
+
+.cartoucheAnchor{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    margin: 2em;
+    max-width: 800px;
+}
+.cartoucheAnchor:hover{
+    color: white;
+    text-decoration: none;
+    opacity: 0.95;
+}
+
+.gameCartouche{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1.5em;
+    border: solid var(--dark) 2px;
+    padding: 10px;
+    border-radius: 15px;
+    background-color: var(--dark);
+    box-shadow: 5px 5px 20px var(--light-green);
+}
+
+.gameTittle{
+    width: 100%;
+    color: var(--troll-body-green);
+    text-shadow: 1px 1px 2px var(--light-green);
+}
+
+.gameIllustrationPicture{
+    border-radius: 15px;
+    border: solid var(--dark) 2px;
+    object-fit: contain;
+    filter: drop-shadow(1px 1px 2px var(--light-green));
+    margin-top: 5px;
+}
+
+.fakePlayButton{
+    width: 50%;
+    height: 35px;
+    text-align: center;
+    background-color: var(--troll-body-green);
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.gamePresentationText{
+    padding: 10px 20px 10px 30px;
+    text-align: justify;
+    text-align-last: center;
+}
+
+@media (orientation: landscape) {
+    .cartoucheAnchor{
+        width: auto;
+    }
+    .gameIllustrationPicture{
+        max-width: 50%;
+    }
+    .gamePresentationText{
+        max-width: 50%;
+    }
+    .fakePlayButton{
+        margin-left: auto;
+    }
+}
+
+@media (orientation: portrait) {
+    .gameCartouche{
+        flex-direction: column;
+    }
+    .gameIllustrationPicture{
+        max-height: 50%;
+        max-width: 100%;
+    }
+    .gamePresentationText{
+        max-height: 50%;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .gamePage{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .cartoucheAnchor{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .gameBigTittle{
+        background: linear-gradient(to right, #a5535500 30%, var(--dark-green), #a5535500 70%);
+    }
+}
+
+/* ========== Carousel effects ========== */
+.go_to_what_to_do:hover{
+    opacity: 80%;
+}
+
+.go_to_whack_a_mole:hover{
+    opacity: 80%;
+}
+
+.go_to_about_us:hover{
+    opacity: 80%;
+}
+
+/* ========== Catch phrase ========== */
+.catch_phrase{
+    background: var(--light-green);
+}
+
+
+.choose_category {
+    text-align: center;
+    color: white;
+    font-size: 30px;
+    padding: 10px;
+    margin: 0;
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+/* ========== Game categories ========== */
+.articles{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: var(--light-green);
+}
+
+.categorie_cards{
+    border-radius: 15px;
+    text-align: center;
+    width: 100%;
+    padding: 10px;
+    margin: 10px;
+    box-shadow: 5px 5px 5px black;
+    background-image: url("../images/cards/card_background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.categorie_cards:hover{
+    opacity: 50%;
+    cursor: pointer;
+}
+
+.text_card{
+    color: white;
+    padding-top: 5px;
+}
+
+.black-text-shadow{
+    text-shadow: #000000 1px 1px, #000000 -1px 1px, #000000 -1px -1px, #000000 1px -1px;
+}
+
+.go_to_category, .go_to_category:link, .go_to_category:hover{
+    color: white;
+    text-decoration: none;
+}
+
+.scallop-down{
+    height:100px;
+    width:100%;
+    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(var(--light-green)), color-stop(0.49, var(--light-green)), color-stop(0.51, #fff), to(white));
+    -webkit-background-size: 49px 100%;
+}
+
+/*
+Responsive design
+*/
+
+@media only screen and (min-width: 1200px){
+    .articles{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categorie_cards{
+        max-width: 30%;
+    }
+}
+
+@media screen and (min-width : 600px) {
+
+    .articles {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .categorie_cards {
+        width: 45%;
+    }
+}
+
+/*
+======================What to Do - Page ==========================================
+ */
+
+.boredBackground{
+    background-image: url("../images/whatToDo/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boredPicture{
+    object-fit: contain;
+    border-radius: 20%;
+    margin: 0 5px 0 5px;
+}
+
+.boredCartouche{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: var(--transparent);
+}
+
+.boredDescription{
+    padding: 30px;
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
+
+.boredTittle{
+    margin: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 34px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+
+
+
+.nav-menu {
+    width: 50%;
+    min-height: 100vh;
+    background-color: var(--light-green);
+    position: absolute;
+    top: 50px;
+    left: -15px;
+    z-index: 1000;
+
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+    .boredPage{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .boredCartouche{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 30%;
+        margin: 20px;
+    }
+}
+
+
+/* -------------------------   About Us    ------------------------ */
+
+.aboutUsBackground{
+    background-image: url("/assets/images/aboutUs/matrixBackground.jpg");
+}
+
+.aboutUs{
+>>>>>>> master
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutCartouche{
+    display: flex;
+    text-align: center;
+    background-color: var(--darkTransparent);
+    margin: 10px 10px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+}
+.aboutCartouche img{
+    width: 200px;
+    border: 3px solid var(--light-green);
+    box-shadow: 0 0 10px var(--light-green);
+    border-radius: 50%;
+    margin: 10px;
+}
+.aboutCartouche img:hover{
+    opacity: 0.85;
+}
+.aboutPicture{
+    margin: auto;
+}
+.aboutCartouche figcaption{
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 3px #e7d49c;
+    border: 3px solid var(--light-green);
+    border-radius: 25px;
+    background-color: var(--light-green);
+    box-shadow: 0 0 10px var(--light-green);
+    margin: -16px auto 0px auto;
+}
+.aboutTxt{
+    padding: 10px;
+    text-shadow: 0 0 3px var(--light-green);
+    background-color: var(--light-greenTransparent);
+    border-radius: 10% / 50%;
+}
+.aboutSubTittle{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 3px #e7d49c;
+    background: linear-gradient(to right, #a5535500 5%, var(--light-green) 10%, var(--light-green), var(--light-green) 90% , #a5535500 95%);
+    padding: 5px;
+    margin-top: 5px;
+}
+.aboutInfo{
+    vertical-align: middle;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+    .aboutUs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .aboutCartouche{
+        max-width: 35%;
+        margin: 20px;
+    }
+}
+
