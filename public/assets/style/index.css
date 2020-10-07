@@ -6,6 +6,9 @@
     --dark-green: #4a7c59;
     --yellow: #ffca3a;
     --blue: #779be7;
+    --transparent: #4a7c5988;
+    --darkTransparent: #3d3d3dee;
+    --light-greenTransparent: #caffd055;
     --bg: #10111F;
     --barsize: 15px;
 }
@@ -429,7 +432,7 @@ Responsive design
     margin-top: 1.5em;
     padding: 10px;
     border-radius: 20%;
-    background-color: var(--dark-green);
+    background-color: var(--transparent);
 }
 
 .boredDescription{
@@ -465,3 +468,81 @@ Responsive design
         margin: 20px;
     }
 }
+
+
+/* -------------------------   About Us    ------------------------ */
+
+.aboutUsBackground{
+    background-image: url("/assets/images/aboutUs/matrixBackground.jpg");
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutCartouche{
+    display: flex;
+    text-align: center;
+    background-color: var(--darkTransparent);
+    margin: 10px 10px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+}
+.aboutCartouche img{
+    width: 200px;
+    border: 3px solid var(--light-green);
+    box-shadow: 0 0 10px var(--light-green);
+    border-radius: 50%;
+    margin: 10px;
+}
+.aboutCartouche img:hover{
+    opacity: 0.85;
+}
+.aboutPicture{
+    margin: auto;
+}
+.aboutCartouche figcaption{
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 3px #e7d49c;
+    border: 3px solid var(--light-green);
+    border-radius: 25px;
+    background-color: var(--light-green);
+    box-shadow: 0 0 10px var(--light-green);
+    margin: -16px auto 0px auto;
+}
+.aboutTxt{
+    padding: 10px;
+    text-shadow: 0 0 3px var(--light-green);
+    background-color: var(--light-greenTransparent);
+    border-radius: 10% / 50%;
+}
+.aboutSubTittle{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 3px #e7d49c;
+    background: linear-gradient(to right, #a5535500 5%, var(--light-green) 10%, var(--light-green), var(--light-green) 90% , #a5535500 95%);
+    padding: 5px;
+    margin-top: 5px;
+}
+.aboutInfo{
+    vertical-align: middle;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+    .aboutUs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .aboutCartouche{
+        max-width: 35%;
+        margin: 20px;
+    }
+}
+
