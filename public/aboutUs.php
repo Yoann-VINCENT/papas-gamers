@@ -9,7 +9,7 @@
     <title>About Us</title>
 </head>
 <body class="aboutUsBackground">
-    <?php require_once('/assets/ressources/_header.php'); ?>
+    <?php require_once('assets/ressources/_header.php'); ?>
     <main class="aboutUsPage">
         <h2 class="gameBigTittle">About the Papa's</h2>
         <!-- first solution -->
@@ -69,7 +69,7 @@
         </section>
 
     </main>
-    <?php require_once('/assets/ressources/_footer.php'); ?>
+    <?php require_once('assets/ressources/_footer.php'); ?>
     <script src="/assets/js/header.js"></script>
 </body>
 </html>

@@ -9,7 +9,7 @@
     <title>What to Do</title>
 </head>
 <body class="boredBackground">
-    <?php require_once('/assets/ressources/_header.php'); ?>
+    <?php require_once('assets/ressources/_header.php'); ?>
     <main class="boredPage">
         <h2 class="gameBigTittle">What to do ?</h2>
         <!-- first solution -->
@@ -62,7 +62,7 @@
             </P>
         </section>
     </main>
-    <?php require_once('/assets/ressources/_footer.php'); ?>
+    <?php require_once('assets/ressources/_footer.php'); ?>
     <script src="/assets/js/header.js"></script>
 </body>
 </html>

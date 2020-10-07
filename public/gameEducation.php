@@ -8,7 +8,7 @@
     <title>Educative Games</title>
 </head>
 <body class="gameBackground">
-    <?php require_once('/assets/ressources/_header.php'); ?>
+    <?php require_once('assets/ressources/_header.php'); ?>
     <main>
         <h2 class="gameBigTittle">Educative games</h2>
         <section  class="gamePage">
@@ -131,7 +131,7 @@
                 <!-- Cartouche block 9 end-->
         </section>
     </main>
-    <?php require_once('/assets/ressources/_footer.php'); ?>
+    <?php require_once('assets/ressources/_footer.php'); ?>
     <script src="/assets/js/header.js"></script>
 </body>
 </html>

@@ -20,5 +20,8 @@
         </div>
         <script src="assets/js/clickPerSecond.js"></script>
         <script src="assets/js/header.js"></script>
+    <?php include ('assets/ressources/_footer.php'); ?>
+
     </body>
+
 </html>
