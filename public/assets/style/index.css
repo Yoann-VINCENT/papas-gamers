@@ -594,6 +594,9 @@ footer{
         max-width: 35%;
         margin: 20px;
     }
+    .aboutSubTittle{
+        margin-bottom: 50px;
+    }
 }
 @media only screen and (max-width: 600px) {
     .aboutCartouche img{
