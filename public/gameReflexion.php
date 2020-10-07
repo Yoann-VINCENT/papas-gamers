@@ -16,11 +16,11 @@
             <a href="#" class="cartoucheAnchor" title="Go to our minesweeper game">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Wild Minesweeper</h3>
-                    <img src="/assets/images/game/minesweeper.png" class="gameIllustrationPicture"   alt="gameplay picture of our minesweeper">
+                    <img src="/assets/images/game/Work-in-Progress.png" class="gameIllustrationPicture"   alt="gameplay picture of our minesweeper">
                     <p class="gamePresentationText">The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.
                         <br>
                         <br>
-                        <button class="fakePlayButton">PLAY</button>
+                        <button class="fakePlayButton">Coming Soon</button>
                     </p>
                 </section>
             </a>
