@@ -18,7 +18,15 @@
 
     <button class="button_header">Ham</button>
     <img class="logo-icon" src="../images/icone/troll.png">
-    <button class="login button_header"  data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+    <?php
+    if (isset($_POST['password']) && $_POST['password'] == "php")
+    {
+        echo '<img class="logo-icon" src="../images/login/profilMatthieu.png">';
+    } else
+    {
+        echo '<button class="login button_header"  data-toggle="modal" data-target="#exampleModalCenter">Login</button>';
+    }
+    ?>
 
     <!-- Modal -->
 
