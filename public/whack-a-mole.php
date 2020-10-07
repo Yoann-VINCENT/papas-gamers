@@ -7,7 +7,8 @@
     </head>
     <body>
     <?php require_once("assets/ressources/_header.php"); ?>
-        <div>
+        <div class="game-container">
+            <div class="timer-display"></div>
             <div class="score-display"></div>
             <div class="container-whack"></div>
             <div>

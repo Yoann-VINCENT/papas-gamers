@@ -6,9 +6,22 @@
     --dark-green: #4a7c59;
     --yellow: #ffca3a;
     --blue: #779be7;
+    --transparent: #4a7c5988;
+    --darkTransparent: #3d3d3dee;
+    --light-greenTransparent: #caffd055;
     --bg: #10111F;
     --barsize: 15px;
 }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+}
+
 /*
 1 Header/Navbar
  */
@@ -23,69 +36,60 @@ header {
     align-items: center;
 }
 
-
-/*
-.hamburger-container {
-    width: 50px;
-    height: 50px;
-    position: relative;
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 100000;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
 }
 
-
-.hamburger-line, .hamburger-line::before, .hamburger-line::after {
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
     display: block;
-    background-color: var(--troll-body-green);
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
     position: absolute;
-    height: 4px;
-    width: 50px;
-}
-.hamburger-line::before, .hamburger-line::after {
-    content: " ";
-}
-
-.hamburger-line {
-    top: 50%;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
 }
 
-.hamburger-line::before {
-    top: 50px;
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
 }
 
-.hamburger-line::after {
-    top: 75%;
-}
-*/
 
-
-button {
+nav button {
     width: 50px;
     height: 50px;
     background-color: var(--troll-body-green);
 }
 
-.nav-menu {
-    width: 50%;
-    min-height: 100vh;
-    background-color: var(--light-green);
-    position: absolute;
-    top: 50px;
-    left: -15px;
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    list-style-type: none;
-}
-
-.nav-menu li {
-    padding: 10px;
-}
 
 .nav-menu-overlay {
     background-color: black;
     opacity: 0.1;
     position: fixed;
-    min-height: 100vh;
+    top: 0;
+    left: 0;
+    height: 100%;
     min-width: 100vw;
 }
 
@@ -153,7 +157,7 @@ button {
     top: 50px;
     left: -15px;
     z-index: 1000;
-    display: flex;
+    display: none;
     flex-direction: column;
     align-items: center;
     list-style-type: none;
@@ -164,6 +168,7 @@ button {
 }
 
 .nav-menu-overlay {
+    display: none;
     background-color: black;
     opacity: 0.1;
     position: absolute;
@@ -371,13 +376,6 @@ button {
     text-decoration: none;
 }
 
-.scallop-down{
-    height:100px;
-    width:100%;
-    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(var(--light-green)), color-stop(0.49, var(--light-green)), color-stop(0.51, #fff), to(white));
-    -webkit-background-size: 49px 100%;
-}
-
 /*
 Responsive design
 */
@@ -418,18 +416,20 @@ Responsive design
 }
 
 .boredPicture{
-    object-fit: contain;
     border-radius: 20%;
+    max-width: 100%;
+    min-width: 0;
+    max-height: 50%;
     margin: 0 5px 0 5px;
 }
 
 .boredCartouche{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1.5em;
+    margin: 1.5em 15px 0 15px;
     padding: 10px;
     border-radius: 20%;
-    background-color: var(--dark-green);
+    background-color: var(--transparent);
 }
 
 .boredDescription{
@@ -437,16 +437,20 @@ Responsive design
     text-align: justify;
     text-align-last: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 22px;
+    font-size: 32px;
+    color: white;
+    text-shadow: 0 0 3px var(--dark);
 }
 
 .boredTittle{
     margin: 25px;
     font-family: 'Dancing Script', cursive;
-    font-size: 34px;
+    font-size: 50px;
     font-weight: bold;
     width: 100%;
     text-align: center;
+    color: white;
+    text-shadow: 0 0 3px var(--dark);
 }
 
 @media only screen and (min-width: 600px) and (min-height: 400px) {
@@ -463,5 +467,135 @@ Responsive design
         justify-content: space-between;
         max-width: 30%;
         margin: 20px;
+    }
+}
+/*     Footer       */
+
+footer{
+    background-color: var(--dark);
+}
+
+.first_paragraph_footer{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.paragraph_footer, .paragraph_footer:hover{
+    text-decoration: none;
+    margin: 0;
+}
+
+.a_footer{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.a_footer:hover{
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+.second_paragraph_footer{
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.github_logo{
+    max-width: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 10px;
+}
+
+/* -------------------------   About Us    ------------------------ */
+
+.aboutUsBackground{
+    background-image: url("/assets/images/aboutUs/matrixBackground.jpg");
+}
+
+.aboutUs{
+    display: flex;
+    flex-direction: column;
+}
+
+.aboutCartouche{
+    display: flex;
+    text-align: center;
+    background-color: var(--darkTransparent);
+    margin: 10px 10px;
+    border-radius: 25px;
+    padding-bottom: 10px;
+}
+.aboutCartouche img{
+    width: 200px;
+    border: 3px solid var(--light-green);
+    box-shadow: 0 0 10px var(--light-green);
+    border-radius: 50%;
+    margin: 10px;
+}
+.aboutCartouche img:hover{
+    opacity: 0.85;
+}
+.aboutPicture{
+    margin: auto;
+}
+.aboutCartouche figcaption{
+    width: 80%;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 0 0 3px #e7d49c;
+    border: 3px solid var(--light-green);
+    border-radius: 25px;
+    background-color: var(--light-green);
+    box-shadow: 0 0 10px var(--light-green);
+    margin: -16px auto 0px auto;
+}
+.aboutTxt{
+    padding: 10px;
+    color: white;
+    text-shadow: 0 0 3px var(--dark);
+    background-color: var(--light-greenTransparent);
+    border-radius: 10% / 50%;
+    font-size: 1.2em;
+}
+.aboutSubTittle{
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 0 0 3px #e7d49c;
+    background: linear-gradient(to right, #a5535500 5%, var(--light-green) 10%, var(--light-green), var(--light-green) 90% , #a5535500 95%);
+    padding: 5px;
+    margin-top: 5px;
+}
+.aboutInfo{
+    vertical-align: middle;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+    .aboutUs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .aboutCartouche{
+        max-width: 35%;
+        margin: 20px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .aboutCartouche img{
+        max-width: 100px;
+    }
+    .aboutCartouche figcaption{
+        width: 100%;
     }
 }

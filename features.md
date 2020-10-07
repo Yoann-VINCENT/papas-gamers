@@ -27,7 +27,7 @@
 	* background modal
 		* function hideLogin
 
-* modal login
+* modal login   ##########################
 	* login form
 		* username input
 		* userpassword input
@@ -71,18 +71,16 @@ A VOIR CONTENU DU FOOTER
 
 
 ### page jeu ###
-QUESTION: BLOCKER ACCES AUX JEUX SI PAS LOGIN?
+QUESTION: BLOCKER ACCES AUX JEUX SI PAS LOGIN?  ##########################
 * contener avec jeu
 * score (à intégrer dans le jeu, semble le + facile)
 * loading screen?
 
 
 ### quoi faire pour s'occuper? ###
-CONTENU?
+DONE
 
-
-
-### about us ###  NPO ETRE ELEGANT   (C)
+### about us ###  NPO ETRE ELEGANT   (Y)
 * background du group les Charryofles?
 * présentation x4
 	* photo

@@ -2,9 +2,10 @@ const gridContainer = document.querySelector(".container-whack");
 const scoreDisplay = document.querySelector(".score-display");
 const startButton = document.querySelector(".whack-start");
 const endButton = document.querySelector(".whack-end");
+const timer = document.querySelector(".timer-display");
 
 startButton.addEventListener("click", startGame);
-endButton.addEventListener("click", endGameClickHandler);
+endButton.addEventListener("click", endGame);
 
 const GAME_DIFFICULTY = {
     EASY: 4,
@@ -13,7 +14,9 @@ const GAME_DIFFICULTY = {
     ULTIMATE: 1
 }
 
-const GAME_DURATION = 60*1000;
+const GAME_DURATION = 30*1000;
+let gameTimoutId = null;
+let startTimer = null;
 
 
 let whackGrid = [
@@ -24,17 +27,8 @@ let whackGrid = [
 ];
 
 let continueGame = true;
-let whackGridSize = 4;
-let count = 0;
+let score = 0;
 
-
-function launchGame(){
-    if(continueGame){
-        const coord = getRandomEmptyPosi(whackGrid);
-        createMole( getRandomURL(), coord, whackGrid) ;
-        setTimeout( launchGame, randomTimer() );
-    }
-}
 
 function createMole(url, coord, grid){
     const mole = document.createElement("img");
@@ -47,6 +41,18 @@ function createMole(url, coord, grid){
     grid[y][x] = true;
     gridContainer.append(mole);
     setTimeout( removeMole.bind(null, mole), 1000);
+}
+
+function removeMole(mole){
+    const x = mole.dataset.x;
+    const y = mole.dataset.y;
+    whackGrid[y][x] = null;
+    mole.remove();
+}
+
+function removeImageClickHandler(event){
+    const mole = event.target;
+    removeMole(mole);
 }
 
 function getRandomEmptyPosi(grid){
@@ -70,34 +76,34 @@ function  getRandomURL(){
     return urls[randomIndex];
 }
 
-function removeImageClickHandler(event){
-    const mole = event.target;
-    removeMole(mole);
-}
-
-function removeMole(mole){
-    const x = mole.dataset.x;
-    const y = mole.dataset.y;
-    whackGrid[y][x] = null;
-    mole.remove();
-}
 
 function randomTimer(){
     return Math.random()*1500 + 4;
 }
 
 function startGame(){
-    gridContainer.innerHTML = null;
-    gridContainer.classList.add("size-easy")
+    //gridContainer.classList.add("size-easy")
     whackGrid = createGrid(4);
     continueGame = true;
-    launchGame();
+    startTimer = Date.now() + GAME_DURATION;
+    timer.textContent = "" + Math.floor(GAME_DURATION/1000);
+    whackGame();
+    updateTimer();
 }
 
-function endGameClickHandler(){
+function whackGame(){
+    if(continueGame){
+        const coord = getRandomEmptyPosi(whackGrid);
+        createMole( getRandomURL(), coord, whackGrid) ;
+        setTimeout( whackGame, randomTimer() );
+    }
+}
+
+function endGame(){
     continueGame = false;
+    gridContainer.innerHTML = null;
+    clearTimeout(gameTimoutId);
 }
-
 
 function createGrid(size){
     const grid = new Array(size);
@@ -107,62 +113,19 @@ function createGrid(size){
     return grid;
 }
 
+function updateTimer(){
+    const timeLeft = startTimer - Date.now();
+    if(timeLeft<=0) {
+        endGame();
+    }
+    if(continueGame){
+        timer.textContent = "" + Math.floor(timeLeft/1000);
+        setTimeout( updateTimer, 200 );
+    }
+
+}
 
 /*
-grille
-
-3photos
-
-apparition aléatoire des photos
-si pierre ou thomas gagne des points
-si matthieu perd des points
-1 pierre vaut + qu'un thomas;   fréquence thomas > pierre
-incrémentation du score
-
-apparition automatique aléatoire:
-ne peut apparaitre sur un endroit déjà utilisé
-
-disparition
-si click  => son  (matthieu, quelle est votre question) pierre 1 mississipi
-timing épuisé => autre son, thomas noob, pierre 3 mississipi
-timer variable
-
--idée de niveau de difficulté;
-
-
-3 objects
-thomas
-matthieu
-pierre
-
-
-creation grid, reference null
-
-function add a person
-      if game true
-        find emplacement aléatoire vide
-            si pris, recommence
-        creation aleatoire person
-        placer la persone à l'emplacement
-        timeout recursif avec timeur variable
-
-
-difficulté change l'interval du timeur de creation
-condition de fin rater 6 thomas ( 1 pierre vaut 2 thomas)
-
-
-
-placer la personne
-display grid
-    place grid-area(x+1/y+1x+2/y+2
-
-button play
-    reset score
-    launch game
-
-    ULTIMATE VERSION
-    UNE SEULE CASE, just pour le plaisir du son MUHUHAAHAHAHAHA
- */
 class Person {
     constructor(x, y, person) {
         this.x = x;
@@ -175,4 +138,4 @@ const thomas = {
     points : "",
     clickSound : "",
     timeoutSound : "",
-}
+}*/

@@ -1,31 +1,33 @@
 :root{
     --gridSize: 100vw;
+    --nbColumns: 4;
 }
 
-* {
-    margin: 0;
-    padding: 0;
+@media screen AND (min-width: 600px){
+    :root {
+        --gridSize: 800px;
+    }
+}
+
+body {
+    background-color: cyan;
+    background-image: url("/assets/images/whack-a-mole/background-terraria.jpg");
+    background-size: cover;
+}
+
+.game-container{
+    margin: 20px auto 0;
+    text-align: center;
+    width: var(--gridSize);
+
 }
 
 .container-whack {
-    width: var(--gridSize);
     height: var(--gridSize);
     display: grid;
-    background-color: cornflowerblue;
-}
-.size-easy{
-    grid-template-columns: repeat(4, calc(var(--gridSize) / 4 ));
-    grid-template-rows: repeat(4, calc(var(--gridSize) / 4 ));
-}
-
-.size-normal{
-    grid-template-columns: repeat(10, calc(var(--gridSize) / 10 ));
-    grid-template-rows: repeat(10, calc(var(--gridSize) / 10 ));
-}
-
-.size-hard{
-    grid-template-columns: repeat(15, calc(var(--gridSize) / 15 ));
-    grid-template-rows: repeat(15, calc(var(--gridSize) / 15 ));
+    background-color: #127caf80;
+    grid-template-columns: repeat( var(--nbColumns), calc(var(--gridSize) / var(--nbColumns) ));
+    grid-template-rows: repeat( var(--nbColumns) , calc( var(--gridSize) / var(--nbColumns) ));
 }
 
 .container-whack img {
