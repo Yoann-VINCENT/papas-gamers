@@ -11,8 +11,6 @@ function hideMenuClickHandler(event){
     menu.style.display = "none";
 }
 
-
-
 function hamburgerClickHandler(event){
     if(!shouldDisplayMenu){
         shouldDisplayMenu = true;
