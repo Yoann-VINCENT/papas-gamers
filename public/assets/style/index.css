@@ -193,10 +193,10 @@ button {
     font-size: 2.2em;
     text-align: center;
     width: 100%;
-    background: linear-gradient(to right, #a5535500 5%, #4a7c59, #a5535500 95%);
+    background: linear-gradient(to right, #a5535500 5%, var(--dark-green), #a5535500 95%);
     padding: 10px;
     color: white;
-    text-shadow: 1px 1px 5px #3d3d3d;
+    text-shadow: 1px 1px 5px var(--dark);
 }
 
 .gamePage{
@@ -205,6 +205,7 @@ button {
 }
 
 .cartoucheAnchor{
+    text-decoration: none;
     display: inline-block;
     color: white;
     margin: 2em;
@@ -222,24 +223,24 @@ button {
     justify-content: center;
     align-items: center;
     margin-top: 1.5em;
-    border: solid #3d3d3d 2px;
+    border: solid var(--dark) 2px;
     padding: 10px;
     border-radius: 15px;
-    background-color: #3d3d3d;
-    box-shadow: 5px 5px 20px #caffd0;
+    background-color: var(--dark);
+    box-shadow: 5px 5px 20px var(--light-green);
 }
 
 .gameTittle{
     width: 100%;
-    color: #8bc34a;
-    text-shadow: 1px 1px 2px #caffd0;
+    color: var(--troll-body-green);
+    text-shadow: 1px 1px 2px var(--light-green);
 }
 
 .gameIllustrationPicture{
     border-radius: 15px;
-    border: solid #3d3d3d 2px;
+    border: solid var(--dark) 2px;
     object-fit: contain;
-    filter: drop-shadow(1px 1px 2px #caffd0);
+    filter: drop-shadow(1px 1px 2px var(--light-green));
     margin-top: 5px;
 }
 
@@ -247,7 +248,7 @@ button {
     width: 50%;
     height: 35px;
     text-align: center;
-    background-color: #8bc34a;
+    background-color: var(--troll-body-green);
     border-radius: 15px;
     font-weight: bold;
     font-size: 1.3em;
@@ -300,7 +301,7 @@ button {
         justify-content: space-between;
     }
     .gameBigTittle{
-        background: linear-gradient(to right, #a5535500 30%, #4a7c59, #a5535500 70%);
+        background: linear-gradient(to right, #a5535500 30%, var(--dark-green), #a5535500 70%);
     }
 }
 
@@ -396,5 +397,64 @@ Responsive design
 
     .categorie_cards {
         width: 45%;
+    }
+}
+
+/*
+======================What to Do - Page ==========================================
+ */
+
+.boredBackground{
+    background-image: url("../images/whatToDo/background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.boredPicture{
+    object-fit: contain;
+    border-radius: 20%;
+    margin: 0 5px 0 5px;
+}
+
+.boredCartouche{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 1.5em;
+    padding: 10px;
+    border-radius: 20%;
+    background-color: var(--dark-green);
+}
+
+.boredDescription{
+    padding: 30px;
+    text-align: justify;
+    text-align-last: center;
+    font-family: 'Dancing Script', cursive;
+    font-size: 22px;
+}
+
+.boredTittle{
+    margin: 25px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 34px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+}
+
+@media only screen and (min-width: 600px) and (min-height: 400px) {
+    .boredPage{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .boredCartouche{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        max-width: 30%;
+        margin: 20px;
     }
 }
