@@ -416,9 +416,10 @@ Responsive design
 }
 
 .boredPicture{
-    object-fit: contain;
     border-radius: 20%;
+    max-width: 100%;
     min-width: 0;
+    max-height: 50%;
     margin: 0 5px 0 5px;
 }
 
