@@ -15,7 +15,7 @@
         </ul>
     </nav>
 
-    <img class="logo-icon" src="/assets/images/icone/troll.png">
+    <a href="/index.php"><img class="logo-icon" src="/assets/images/icone/troll.png"></a>
 
     <button class="login">Login</button>
 </header>

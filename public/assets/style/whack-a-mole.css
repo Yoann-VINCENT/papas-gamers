@@ -1,6 +1,7 @@
 :root{
     --gridSize: 100vw;
     --nbColumns: 4;
+    --gameBackground: #127caf80;
 }
 
 @media screen AND (min-width: 600px){
@@ -25,7 +26,7 @@ body {
 .container-whack {
     height: var(--gridSize);
     display: grid;
-    background-color: #127caf80;
+    background-color: var(--gameBackground);
     grid-template-columns: repeat( var(--nbColumns), calc(var(--gridSize) / var(--nbColumns) ));
     grid-template-rows: repeat( var(--nbColumns) , calc( var(--gridSize) / var(--nbColumns) ));
 }
@@ -35,4 +36,18 @@ body {
     min-width: 0;
     height: auto;
     border-radius: 20%;
+}
+
+.test {
+    width: 55%;
+    max-width: 500px;
+    border: solid var(--dark-green) 3px;
+    box-shadow: 5px 5px 20px var(--dark-green);
+    font-size: 2em;
+    text-align: center;
+    margin: 0 auto;
+    padding: 20px;
+    user-select: none;
+    color: #ffffff;
+    text-shadow: 2px 2px 40px var(--dark-green);
 }
