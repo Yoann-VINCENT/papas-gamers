@@ -13,7 +13,7 @@
         <h2 class="gameBigTittle">Reflexion games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
-            <a href="#" target="_blank" class="cartoucheAnchor" title="Go to our minesweeper game">
+            <a href="#" class="cartoucheAnchor" title="Go to our minesweeper game">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Wild Minesweeper</h3>
                     <img src="assets/images/game/minesweeper.png" class="gameIllustrationPicture"   alt="gameplay picture of our minesweeper">

@@ -13,7 +13,7 @@
         <h2 class="gameBigTittle">Arcade games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
-            <a href="whack-a-mole.php" target="_blank" class="cartoucheAnchor" title="Go to our Whac-A-Mole game">
+            <a href="whack-a-mole.php" class="cartoucheAnchor" title="Go to our Whac-A-Mole game">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Whac-A-Mole</h3>
                     <img src="assets/images/game/whac-a-mole.jpg" class="gameIllustrationPicture"   alt="gameplay picture of our Whac-A-Mole game">
@@ -26,7 +26,7 @@
             </a>
             <!-- Cartouche block 1 end-->
             <!-- Cartouche block 2 start-->
-            <a href="clickPerSecond.php" target="_blank" class="cartoucheAnchor" title="Go to our click per seconds game">
+            <a href="clickPerSecond.php" class="cartoucheAnchor" title="Go to our click per seconds game">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Frenzy clicker</h3>
                     <img src="assets/images/game/click.png" class="gameIllustrationPicture"   alt="gameplay picture of our click per seconds game">

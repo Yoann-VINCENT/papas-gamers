@@ -1,5 +1,6 @@
 :root{
     --gridSize: 100vw;
+    --nbColumns: 4;
 }
 
 @media screen AND (min-width: 600px){
@@ -19,22 +20,8 @@
     height: var(--gridSize);
     display: grid;
     background-color: var(--dark-green);
-
-}
-
-.size-easy{
-    grid-template-columns: repeat(4, calc(var(--gridSize) / 4 ));
-    grid-template-rows: repeat(4, calc(var(--gridSize) / 4 ));
-}
-
-.size-normal{
-    grid-template-columns: repeat(10, calc(var(--gridSize) / 10 ));
-    grid-template-rows: repeat(10, calc(var(--gridSize) / 10 ));
-}
-
-.size-hard{
-    grid-template-columns: repeat(15, calc(var(--gridSize) / 15 ));
-    grid-template-rows: repeat(15, calc(var(--gridSize) / 15 ));
+    grid-template-columns: repeat( var(--nbColumns), calc(var(--gridSize) / var(--nbColumns) ));
+    grid-template-rows: repeat( var(--nbColumns) , calc( var(--gridSize) / var(--nbColumns) ));
 }
 
 .container-whack img {

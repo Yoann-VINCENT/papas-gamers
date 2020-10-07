@@ -5,7 +5,7 @@ const endButton = document.querySelector(".whack-end");
 const timer = document.querySelector(".timer-display");
 
 startButton.addEventListener("click", startGame);
-endButton.addEventListener("click", endGameClickHandler);
+endButton.addEventListener("click", endGame);
 
 const GAME_DIFFICULTY = {
     EASY: 4,
@@ -16,7 +16,7 @@ const GAME_DIFFICULTY = {
 
 const GAME_DURATION = 30*1000;
 let gameTimoutId = null;
-let startTime = null;
+let startTimer = null;
 
 
 let whackGrid = [
@@ -27,10 +27,7 @@ let whackGrid = [
 ];
 
 let continueGame = true;
-let whackGridSize = 4;
 let score = 0;
-
-
 
 
 function createMole(url, coord, grid){
@@ -85,25 +82,26 @@ function randomTimer(){
 }
 
 function startGame(){
-    gridContainer.innerHTML = null;
-    gridContainer.classList.add("size-easy")
+    //gridContainer.classList.add("size-easy")
     whackGrid = createGrid(4);
     continueGame = true;
-    startTime = new Date.now();
+    startTimer = Date.now() + GAME_DURATION;
+    timer.textContent = "" + Math.floor(GAME_DURATION/1000);
     whackGame();
-    gameTimoutId = setTimeout(()=>{continueGame =false}, GAME_DURATION);
+    updateTimer();
 }
 
 function whackGame(){
     if(continueGame){
         const coord = getRandomEmptyPosi(whackGrid);
         createMole( getRandomURL(), coord, whackGrid) ;
-        setTimeout( launchGame, randomTimer() );
+        setTimeout( whackGame, randomTimer() );
     }
 }
 
-function endGameClickHandler(){
+function endGame(){
     continueGame = false;
+    gridContainer.innerHTML = null;
     clearTimeout(gameTimoutId);
 }
 
@@ -115,7 +113,17 @@ function createGrid(size){
     return grid;
 }
 
-function updateTimer(){}
+function updateTimer(){
+    const timeLeft = startTimer - Date.now();
+    if(timeLeft<=0) {
+        endGame();
+    }
+    if(continueGame){
+        timer.textContent = "" + Math.floor(timeLeft/1000);
+        setTimeout( updateTimer, 200 );
+    }
+
+}
 
 /*
 class Person {
