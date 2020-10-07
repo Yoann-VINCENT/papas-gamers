@@ -1,88 +1,85 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./assets/style/bootstrap.css" rel="stylesheet" type="text/css" >
     <link href="./assets/style/index.css" type="text/css" rel="stylesheet">
     <title>Les papagamers</title>
 </head>
+
 <body>
 
-<?php require_once ('./assets/ressources/_header.php') ?>
+    <?php require ('./assets/ressources/_header.php') ?>
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="First slide">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item ">
+                <img class="d-block w-100" src="assets/images/carousel/banniere_2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item ">
+                <a href="aboutUs.php">
+                    <img class="d-block w-100 go_to_about_us" src="assets/images/carousel/banniere_3.jpg" alt="Third slide">
+                </a>
+            </div>
         </div>
-        <div class="carousel-item ">
-            <img class="d-block w-100" src="assets/images/carousel/banniere_2.jpg" alt="Second slide">
-        </div>
-        <div class="carousel-item ">
-            <img class="d-block w-100" src="assets/images/carousel/banniere_3.jpg" alt="Third slide">
-        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
     </div>
-    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
-
-<p class="catch_phrase">Hey young developer ! <br> Are you boring ? Here you have some games, enjoy it !</p>
 
 
-<div class="articles">
+    <div class="catch_phrase">
+    <p class="choose_category">Choose a game category</p>
+    </div>
 
-    <section class="categorie_cards">
-        <a href="gameArcade.php">
-            <img src="assets/images/icone/Arcade_resize.png" alt="icone of arcade games">
+    <div class="articles">
+
+        <a class="go_to_category categorie_cards" href="gameArcade.php">
+            <img src="assets/images/icone/Arcade.png" alt="icone of arcade games">
+                <div class="text_card">
+                    <h5 class="black-text-shadow">Arcade games</h5>
+                </div>
         </a>
-        <div class="text_card">
-            <h5>Arcade games</h5>
-        </div>
-    </section>
 
+        <a class="go_to_category categorie_cards" href="gameEducation.php">
+            <img src="assets/images/icone/Education.png" alt="icone of education games">
+            <div class="text_card">
+                <h5 class="black-text-shadow">Educative games</h5>
+            </div>
+            </a>
 
-
-    <section class="categorie_cards">
-        <a href="gameEducation.php">
-            <img src="assets/images/icone/Education_resize.png" alt="icone of education games">
+        <a class="go_to_category categorie_cards" href="gameReflexion.php">
+            <img src="assets/images/icone/Mind.png" alt="icone of mind games">
+            <div class="text_card">
+                <h5 class="black-text-shadow">Mind games</h5>
+            </div>
         </a>
-        <div class="text_card">
-            <h5>Educatives games</h5>
-        </div>
-    </section>
 
+    </div>
 
+    <div class="scallop-down"></div>
 
-    <section class="categorie_cards">
-        <a href="gameReflexion.php">
-            <img src="assets/images/icone/Reflexion_resize.png" alt="icone of mind games">
-        </a>
-        <div class="text_card">
-            <h5>Mind games</h5>
-        </div>
-    </section>
+    <?php // include ('public/assets/ressources/_footer.php') ?>
 
-
-
-
-    <?php include ('public/assets/ressources/_footer.php') ?>
-    <script src="/assets/js/header.js"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="assets/js/header.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
 
 </body>
