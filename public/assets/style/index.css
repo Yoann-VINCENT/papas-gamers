@@ -520,6 +520,10 @@ footer{
     background-image: url("/assets/images/aboutUs/matrixBackground.jpg");
 }
 
+.aboutUsPage{
+    margin-bottom: 150px;
+}
+
 .aboutUs{
     display: flex;
     flex-direction: column;
