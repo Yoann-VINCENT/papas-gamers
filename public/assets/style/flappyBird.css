@@ -6,7 +6,14 @@
 .flappy_background{
     background-image: url("../images/flappyBird/terraria_background.jpg");
 }
-/*
+
+body{
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
 #game{
     width: 400px;
     height: 500px;
@@ -47,4 +54,8 @@
     position: absolute;
     top: 100px;
     border-radius: 50%;
+}
+
+footer{
+    margin-top: auto;
 }

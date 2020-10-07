@@ -24,6 +24,10 @@
 
 <script src="assets/js/flappyBird.js"></script>
 
+<?php include ('assets/ressources/_footer.php'); ?>
+
 </body>
+
+
 
 </html>
