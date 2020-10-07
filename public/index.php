@@ -25,7 +25,7 @@
                 <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="First slide">
             </div>
             <div class="carousel-item ">
-                <img class="d-block w-100" src="assets/images/carousel/banniere_1.jpg" alt="Second slide">
+                <img class="d-block w-100" src="assets/images/carousel/banniere_2.jpg" alt="Second slide">
             </div>
             <div class="carousel-item ">
                 <a href="aboutUs.php">
@@ -50,32 +50,26 @@
 
     <div class="articles">
 
-        <section class="categorie_cards">
-            <a class="go_to_category" href="gameArcade.php">
+        <a class="go_to_category categorie_cards" href="gameArcade.php">
             <img src="assets/images/icone/Arcade.png" alt="icone of arcade games">
                 <div class="text_card">
                     <h5 class="black-text-shadow">Arcade games</h5>
                 </div>
-            </a>
-        </section>
+        </a>
 
-        <section class="categorie_cards">
-            <a class="go_to_category" href="gameEducation.php">
+        <a class="go_to_category categorie_cards" href="gameEducation.php">
             <img src="assets/images/icone/Education.png" alt="icone of education games">
             <div class="text_card">
                 <h5 class="black-text-shadow">Educative games</h5>
             </div>
             </a>
-        </section>
 
-        <section class="categorie_cards">
-            <a class="go_to_category" href="gameReflexion.php">
+        <a class="go_to_category categorie_cards" href="gameReflexion.php">
             <img src="assets/images/icone/Mind.png" alt="icone of mind games">
             <div class="text_card">
                 <h5 class="black-text-shadow">Mind games</h5>
             </div>
-            </a>
-        </section>
+        </a>
 
     </div>
 
