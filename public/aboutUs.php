@@ -9,7 +9,7 @@
     <title>About Us</title>
 </head>
 <body class="aboutUsBackground">
-    <?php require_once('assets/ressources/_header.php'); ?>
+    <?php require_once('/assets/ressources/_header.php'); ?>
     <main class="aboutUsPage">
         <h2 class="gameBigTittle">About the Papa's</h2>
         <!-- first solution -->
@@ -17,7 +17,7 @@
             <!-- Charly start -->
             <section class="aboutCartouche">
                 <figure class="aboutPicture">
-                    <a href="https://github.com/Charly-Vial" target="blank"><img src="/assets/images/aboutUs/charly.jpg" alt="Charly profile picture"></a>
+                    <a href="https://github.com/Charly-Vial" target="blank" title="Charly's Github"><img src="/assets/images/aboutUs/charly.jpg" alt="Charly profile picture"></a>
                     <figcaption>Administrator</figcaption>
                 </figure>
                 <div class="aboutInfo">
@@ -35,7 +35,7 @@
                     <p class="aboutTxt">blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem</p>
                 </div>
                 <figure class="aboutPicture">
-                    <a href="https://github.com/Florian-Rowehy" target="blank"><img src="/assets/images/aboutUs/flo.jpg" alt="Florian profile picture"></a>
+                    <a href="https://github.com/Florian-Rowehy" target="blank" title="Flo's Github"><img src="/assets/images/aboutUs/flo.jpg" alt="Florian profile picture"></a>
                     <figcaption>Heavy Beater</figcaption>
                 </figure>
             </section>
@@ -43,7 +43,7 @@
             <!-- Raph start -->
             <section class="aboutCartouche">
                 <figure class="aboutPicture">
-                    <a href="https://github.com/Raphtml" target="blank"><img src="/assets/images/aboutUs/raph.jpg" alt="Raphaël profile picture"></a>
+                    <a href="https://github.com/Raphtml" target="blank" title="Raphael's Github"><img src="/assets/images/aboutUs/raph.jpg" alt="Raphaël profile picture"></a>
                     <figcaption>Fierce Bootstrapper</figcaption>
                 </figure>
                 <div class="aboutInfo">
@@ -61,15 +61,15 @@
                     <p class="aboutTxt">blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem</p>
                 </div>
                 <figure class="aboutPicture">
-                    <a href="https://github.com/Yoann-VINCENT" target="blank"><img src="/assets/images/aboutUs/yo.jpg" alt="Yoann profile picture"></a>
-                    <figcaption>Elegant Stylist</figcaption>
+                    <a href="https://github.com/Yoann-VINCENT" target="blank" title="Yoann's Github"><img src="/assets/images/aboutUs/yo.jpg" alt="Yoann profile picture"></a>
+                    <figcaption>Random Stylist</figcaption>
                 </figure>
             </section>
             <!-- Yoann end -->
         </section>
 
     </main>
-    <?php require_once('assets/ressources/_footer.php'); ?>
-    <script src="assets/js/header.js"></script>
+    <?php require_once('/assets/ressources/_footer.php'); ?>
+    <script src="/assets/js/header.js"></script>
 </body>
 </html>
