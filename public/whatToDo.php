@@ -9,7 +9,7 @@
     <title>What to Do</title>
 </head>
 <body class="boredBackground">
-    <?php include('/assets/ressources/_header.php'); ?>
+    <?php require_once('/assets/ressources/_header.php'); ?>
     <main class="boredPage">
         <h2 class="gameBigTittle">What to do ?</h2>
         <!-- first solution -->
