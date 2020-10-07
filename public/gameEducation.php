@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="assets/style/bootstrap.css">
     <link rel="stylesheet" href="assets/style/index.css">
     <title>Education Games</title>
 </head>
 <body class="gameBackground">
-<?php include('assets/ressources/_header.php'); ?>
+    <?php include('assets/ressources/_header.php'); ?>
     <main>
         <h2 class="gameBigTittle">Education games</h2>
         <section  class="gamePage">
@@ -131,6 +131,7 @@
                 <!-- Cartouche block 9 end-->
         </section>
     </main>
-<?php include('assets/ressources/_footer.php'); ?>
+    <?php include('assets/ressources/_footer.php'); ?>
+    <script src="assets/js/header.js"></script>
 </body>
 </html>

@@ -1,0 +1,69 @@
+:root{
+    --dark: #3d3d3d;
+    --light-green: #caffd0;
+    --troll-body-green: #8bc34a;
+    --dark-green: #4a7c59;
+    --yellow: #ffca3a;
+    --blue: #779be7;
+}
+
+.cpsBackground{
+    background-color: var(--dark);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#container {
+    width: 55%;
+    max-width: 500px;
+    border: solid var(--light-green) 3px;
+    box-shadow: 5px 5px 20px var(--light-green);
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    padding: 20px;
+    user-select: none;
+    color: var(--light-green);
+    text-shadow: 2px 2px 40px var(--light-green);
+}
+
+#clickArea {
+    background-image: url("https://media.giphy.com/media/104ueR8J1OPM2s/giphy.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height : 400px;
+    max-width: 500px;
+    border: solid var(--dark) 2px;
+    box-shadow: 5px 5px 20px var(--light-green);
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#start {
+    font-size: 1.5em;
+    width: 23%;
+    text-align: center;
+    color: var(--light-green);
+    border-radius: 15px;
+    background-color: var(--dark);
+    box-shadow: 5px 5px 20px var(--light-green);
+}
+
+#start:hover {
+    background-color: var(--light-green);
+    color: black;
+}
+
+#scoretxt{
+    font-size: 1.2em;
+    padding: 20px;
+    color: var(--light-green);
+    text-shadow: 2px 2px 40px var(--light-green);
+}
