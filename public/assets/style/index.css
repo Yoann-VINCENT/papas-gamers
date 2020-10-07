@@ -372,13 +372,6 @@ button {
     text-decoration: none;
 }
 
-.scallop-down{
-    height:100px;
-    width:100%;
-    background: -webkit-gradient(radial, 50% 0, 10, 50% 0, 40, from(var(--light-green)), color-stop(0.49, var(--light-green)), color-stop(0.51, #fff), to(white));
-    -webkit-background-size: 49px 100%;
-}
-
 /*
 Responsive design
 */
@@ -428,7 +421,7 @@ Responsive design
 .boredCartouche{
     display: flex;
     flex-wrap: wrap;
-    margin-top: 1.5em;
+    margin: 1.5em 15px 0 15px;
     padding: 10px;
     border-radius: 20%;
     background-color: var(--transparent);
@@ -439,16 +432,20 @@ Responsive design
     text-align: justify;
     text-align-last: center;
     font-family: 'Dancing Script', cursive;
-    font-size: 22px;
+    font-size: 32px;
+    color: white;
+    text-shadow: 0 0 3px var(--dark);
 }
 
 .boredTittle{
     margin: 25px;
     font-family: 'Dancing Script', cursive;
-    font-size: 34px;
+    font-size: 50px;
     font-weight: bold;
     width: 100%;
     text-align: center;
+    color: white;
+    text-shadow: 0 0 3px var(--dark);
 }
 
 @media only screen and (min-width: 600px) and (min-height: 400px) {
@@ -467,7 +464,50 @@ Responsive design
         margin: 20px;
     }
 }
+/*     Footer       */
 
+footer{
+    background-color: var(--dark);
+}
+
+.first_paragraph_footer{
+    padding-bottom: 5px;
+    text-align: center;
+}
+
+.paragraph_footer, .paragraph_footer:hover{
+    text-decoration: none;
+    margin: 0;
+}
+
+.a_footer{
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.a_footer:hover{
+    text-decoration: none;
+    color: var(--light-green);
+}
+
+.second_paragraph_footer{
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+}
+
+.github_logo{
+    max-width: 30px;
+}
+
+.copyright {
+    text-align: center;
+    margin-bottom: 0;
+    padding-bottom: 5px;
+    color: white;
+    font-size: 10px;
+}
 
 /* -------------------------   About Us    ------------------------ */
 
@@ -514,9 +554,11 @@ Responsive design
 }
 .aboutTxt{
     padding: 10px;
-    text-shadow: 0 0 3px var(--light-green);
+    color: white;
+    text-shadow: 0 0 3px var(--dark);
     background-color: var(--light-greenTransparent);
     border-radius: 10% / 50%;
+    font-size: 1.2em;
 }
 .aboutSubTittle{
     text-align: center;
@@ -544,4 +586,11 @@ Responsive design
         margin: 20px;
     }
 }
-
+@media only screen and (max-width: 600px) {
+    .aboutCartouche img{
+        max-width: 100px;
+    }
+    .aboutCartouche figcaption{
+        width: 100%;
+    }
+}
