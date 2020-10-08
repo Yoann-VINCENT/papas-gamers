@@ -3,6 +3,7 @@
     <head>
         <title>Whack a mole</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="./assets/style/bootstrap.css" rel="stylesheet" type="text/css" >
         <link href="assets/style/index.css" type="text/css" rel="stylesheet">
         <link href="assets/style/whack-a-mole.css" type="text/css" rel="stylesheet">
     </head>
@@ -23,6 +24,5 @@
 
     <?php require_once("assets/ressources/_footer.php"); ?>
     <script src="assets/js/whack-a-mole.js"></script>
-    <script src="assets/js/header.js"></script>
     </body>
 </html>

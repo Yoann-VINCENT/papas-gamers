@@ -119,6 +119,10 @@ button.login {
     background-color: var(--troll-body-green);
 }
 
+.btn_submit {
+    background-color: var(--troll-body-green);
+}
+
 .logo-icon {
     width: 45px;
     height: 45px;
