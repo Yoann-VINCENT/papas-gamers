@@ -11,6 +11,7 @@ const finalScoreTxt = document.querySelector("#scoretxt");
 
 let audio = new Audio('/assets/sounds/deja-vu.mp3');
 let audioVictory = new Audio('/assets/sounds/victoryff.mp3');
+let audioDoIT = new Audio('/assets/sounds/doIt.mp3');
 
 
 function showButton(){
@@ -28,6 +29,7 @@ startBtn.addEventListener("click", function()
 clickArea.addEventListener("click", function()
         {
             if (!isEnded) {
+                audioDoIT.play();
                 score++;
                 scoreTxt.textContent = score;
             }
@@ -65,6 +67,8 @@ function endGame()
     {
         audio.pause();
         audio.currentTime = 0;
+        audioDoIT.pause();
+        audioDoIT.currentTime = 0;
         audioVictory.play();
         let clicsBySeconds = (score / duration).toFixed(1);
         timerTxt.textContent = duration.toFixed(1);
