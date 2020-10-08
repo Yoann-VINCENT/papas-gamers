@@ -9,6 +9,9 @@ const startBtn = document.querySelector("#start");
 const clickArea = document.querySelector("#clickArea");
 const finalScoreTxt = document.querySelector("#scoretxt");
 
+let audio = new Audio('/assets/sounds/deja-vu.mp3');
+let audioVictory = new Audio('/assets/sounds/victoryff.mp3');
+
 
 function showButton(){
     startBtn.style.display = 'inline';
@@ -35,28 +38,31 @@ clickArea.addEventListener("click", function()
 
 function startGame()
     {
-    startBtn.style.display = 'none';
-    finalScoreTxt.style.display = 'none';
-    score = -1;
-    isEnded = false;
-    startTime = new Date().getTime();
+        audio.play();
+        startBtn.style.display = 'none';
+        finalScoreTxt.style.display = 'none';
+        score = -1;
+        isEnded = false;
+        startTime = new Date().getTime();
 
-    //Timer
-    let timer = setInterval(function()
-        {
-        let currentTime = (new Date().getTime() - startTime)/1000;
-        if (currentTime < duration) {
-            timerTxt.textContent = currentTime.toFixed(1);
-        } else {
-            isEnded = true;
-            clearInterval(timer);
-            endGame();
-            }
-        }, 1);
+        //Timer
+        let timer = setInterval(function()
+            {
+            let currentTime = (new Date().getTime() - startTime)/1000;
+            if (currentTime < duration) {
+                timerTxt.textContent = currentTime.toFixed(1);
+            } else {
+                isEnded = true;
+                clearInterval(timer);
+                endGame();
+                }
+            }, 1);
     }
 
 function endGame()
     {
+        audio.pause();
+        audioVictory.play();
         let clicsBySeconds = (score / duration).toFixed(1);
         timerTxt.textContent = duration.toFixed(1);
         finalScoreTxt.style.display = 'inline';
