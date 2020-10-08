@@ -62,7 +62,8 @@
             </P>
         </section>
     </main>
+
     <?php require_once('assets/ressources/_footer.php'); ?>
-    <script src="/assets/js/header.js"></script>
+
 </body>
 </html>
