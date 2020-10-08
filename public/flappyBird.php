@@ -9,6 +9,7 @@
         <link href="./assets/style/bootstrap.css" rel="stylesheet" type="text/css">
         <link href="./assets/style/index.css" type="text/css" rel="stylesheet">
         <link rel="stylesheet" href="assets/style/flappyBird.css">
+        <link href="https://fonts.googleapis.com/css2?family=Secular+One&display=swap" rel="stylesheet">
         <title>Flappy Bird</title>
     </head>
 
