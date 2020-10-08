@@ -9,7 +9,7 @@
 </head>
 <body class="gameBackground">
     <?php require_once('assets/ressources/_header.php'); ?>
-    <main>
+    <main class="mindGamepushfooter">
         <h2 class="gameBigTittle">Mind games</h2>
         <section  class="gamePage">
                 <!-- Cartouche block 1 start-->
@@ -20,7 +20,7 @@
                     <p class="gamePresentationText">The objective of the game is to clear a rectangular board containing hidden "mines" or bombs without detonating any of them, with help from clues about the number of neighboring mines in each field.
                         <br>
                         <br>
-                        <button class="fakePlayButton">Coming Soon</button>
+                        <button class="fakePlayButton">Soon</button>
                     </p>
                 </section>
             </a>

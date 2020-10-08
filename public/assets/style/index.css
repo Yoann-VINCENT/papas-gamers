@@ -254,6 +254,10 @@ button.login {
     .gameBigTittle{
         background: linear-gradient(to right, #a5535500 30%, var(--dark-green), #a5535500 70%);
     }
+
+    .mindGamepushfooter{
+        margin-bottom: 270px;
+    }
 }
 
 /* ========== Carousel effects ========== */
@@ -372,7 +376,7 @@ Responsive design
 .boredCartouche{
     display: flex;
     flex-wrap: wrap;
-    margin: 1.5em 15px 0 15px;
+    margin: 1.5em 15px 1.5em 15px;
     padding: 10px;
     border-radius: 20%;
     background-color: var(--transparent);
@@ -467,7 +471,7 @@ footer{
 }
 
 .aboutUsPage{
-    margin-bottom: 150px;
+    margin-bottom: 50px;
 }
 
 .aboutUs{
@@ -542,6 +546,9 @@ footer{
     }
     .aboutSubTittle{
         margin-bottom: 50px;
+    }
+    .aboutUsPage{
+        margin-bottom: 150px;
     }
 }
 @media only screen and (max-width: 600px) {
