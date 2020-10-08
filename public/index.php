@@ -47,35 +47,33 @@
         </a>
     </div>
 
+    <main class="index-background">
+        <p class="choose_category">Choose a game category</p>
+        <div class="articles">
 
-    <div class="catch_phrase">
-    <p class="choose_category">Choose a game category</p>
-    </div>
-
-    <div class="articles">
-
-        <a class="go_to_category categorie_cards" href="gameArcade.php">
-            <img src="assets/images/icone/Arcade.png" alt="icone of arcade games">
-                <div class="text_card">
-                    <h5 class="black-text-shadow">Arcade games</h5>
-                </div>
-        </a>
-
-        <a class="go_to_category categorie_cards" href="gameEducation.php">
-            <img src="assets/images/icone/Education.png" alt="icone of education games">
-            <div class="text_card">
-                <h5 class="black-text-shadow">Educative games</h5>
-            </div>
+            <a class="go_to_category categorie_cards" href="gameArcade.php">
+                <img src="assets/images/icone/Arcade.png" alt="icone of arcade games">
+                    <div class="text_card">
+                        <h5 class="black-text-shadow">Arcade games</h5>
+                    </div>
             </a>
 
-        <a class="go_to_category categorie_cards" href="gameReflexion.php">
-            <img src="assets/images/icone/Mind.png" alt="icone of mind games">
-            <div class="text_card">
-                <h5 class="black-text-shadow">Mind games</h5>
-            </div>
-        </a>
+            <a class="go_to_category categorie_cards" href="gameReflexion.php">
+                <img src="assets/images/icone/Mind.png" alt="icone of mind games">
+                <div class="text_card">
+                    <h5 class="black-text-shadow">Mind games</h5>
+                </div>
+            </a>
 
-    </div>
+            <a class="go_to_category categorie_cards" href="gameEducation.php">
+                <img src="assets/images/icone/Education.png" alt="icone of education games">
+                <div class="text_card">
+                    <h5 class="black-text-shadow">Coding games</h5>
+                </div>
+            </a>
+
+        </div>
+    </main>
 
     <?php include ('assets/ressources/_footer.php'); ?>
 </body>
