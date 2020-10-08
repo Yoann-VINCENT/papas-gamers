@@ -43,6 +43,7 @@ function startGame()
         audioVictory.pause();
         audioVictory.currentTime = 0;
         audio.play();
+        audio.loop = true;
         startBtn.style.display = 'none';
         finalScoreTxt.style.display = 'none';
         score = -1;
