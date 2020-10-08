@@ -1,3 +1,20 @@
+<?php session_start();
+
+?>
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="../style/bootstrap.css" rel="stylesheet" type="text/css" >
+    <link href="../style/index.css" type="text/css" rel="stylesheet">
+    <title>Les papagamers</title>
+</head>
+
+<body>
 <header>
     <nav>
         <div class="hamburger-container">
@@ -17,18 +34,36 @@
 
     <a href="/index.php"><img class="logo-icon" src="/assets/images/icone/troll.png"></a>
 
-    <button class="login"  data-toggle="modal" data-target="#exampleModalCenter">Login</button>
+
 
     <?php
-    /*
-    if (isset($_POST['password']) && $_POST['password'] == "php")
+
+
+
+    if (isset($_POST['password']) && $_POST['password'] == "php") {
+        $_SESSION['password'] = 'php';
+    }
+
+    if ($_SESSION['password'] == "php")
     {
-        echo '<img class="logo-icon" src="../images/login/profilMatthieu.png">';
+        echo '<div>
+
+<a href="/logout.php"><img class="logo-icon" src="/assets/images/login/profilMatthieu.png"></a>
+</div>';
+
+
     } else
     {
         echo '<button class="login button_header"  data-toggle="modal" data-target="#exampleModalCenter">Login</button>';
-    }*/
+    }
+
+
+
+
     ?>
+
+
+
 </header>
 
 <div class="nav-menu-overlay"></div>
@@ -65,21 +100,22 @@
 </div>
 
 <?php
-/*
+
 if (empty($_POST['pseudo']) && isset($_POST['submit_form']))
 {
-    echo 'Veuiller entrer votre pseudo<br />';
+    echo '<h1>Veuiller entrer votre pseudo</h1>';
 }
 if (isset($_POST['password']) && $_POST['password'] == "php")
 {
-    echo 'login ok<br />';
+    $_SESSION['password'] = 'php';
 } elseif (isset($_POST['password']) && $_POST['password'] ==  "javascript")
 {
-    header('location: /login_redirect_page.html');
+    header('location: /fake.html');
 } else if (isset($_POST['password']) && (($_POST['password'] !=  "php") || $_POST['password'] !=  "javasript"))
 {
-    echo "Mot de passe incorrect<br />";
+    echo "<h1>Mot de passe incorrect</h1>";
 }
-*/
 ?>
+
+</body>
 
