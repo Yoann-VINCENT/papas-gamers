@@ -38,6 +38,8 @@ clickArea.addEventListener("click", function()
 
 function startGame()
     {
+        audioVictory.pause();
+        audioVictory.currentTime = 0;
         audio.play();
         startBtn.style.display = 'none';
         finalScoreTxt.style.display = 'none';
@@ -62,6 +64,7 @@ function startGame()
 function endGame()
     {
         audio.pause();
+        audio.currentTime = 0;
         audioVictory.play();
         let clicsBySeconds = (score / duration).toFixed(1);
         timerTxt.textContent = duration.toFixed(1);
