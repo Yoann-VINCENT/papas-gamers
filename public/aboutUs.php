@@ -23,7 +23,7 @@
                 <div class="aboutInfo">
                     <h3 class="aboutSubTittle">Charly Vial</h3>
                     <!-- text 80 char max ;-) -->
-                    <p class="aboutTxt">blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem </p>
+                    <p class="aboutTxt">The honorary Dad of the Group, Charly is our back-end developer.</p>
                 </div>
             </section>
             <!-- Charly end -->
@@ -32,7 +32,7 @@
                 <div class="aboutInfo">
                     <h3 class="aboutSubTittle">Florian Rowehy</h3>
                     <!-- text 80 char max ;-) -->
-                    <p class="aboutTxt">blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem</p>
+                    <p class="aboutTxt">Freshly promoted to Dad status, Florian is our game programmer.</p>
                 </div>
                 <figure class="aboutPicture">
                     <a href="https://github.com/Florian-Rowehy" target="blank" title="Flo's Github"><img src="/assets/images/aboutUs/flo.jpg" alt="Florian profile picture"></a>
@@ -49,7 +49,7 @@
                 <div class="aboutInfo">
                     <h3 class="aboutSubTittle">Raphael Liere</h3>
                     <!-- text 80 char max ;-) -->
-                    <p class="aboutTxt">blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem</p>
+                    <p class="aboutTxt">7 month of Daditude for Raphaël, our precious bootstrapper.</p>
                 </div>
             </section>
             <!-- Raph end -->
@@ -58,7 +58,7 @@
                 <div class="aboutInfo">
                     <h3 class="aboutSubTittle">Yoann Vincent</h3>
                     <!-- text 80 char max ;-) -->
-                    <p class="aboutTxt">blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem blabla lorem</p>
+                    <p class="aboutTxt">With a 2 years old girl, Yoann is our front-end developer.</p>
                 </div>
                 <figure class="aboutPicture">
                     <a href="https://github.com/Yoann-VINCENT" target="blank" title="Yoann's Github"><img src="/assets/images/aboutUs/yo.jpg" alt="Yoann profile picture"></a>
@@ -69,7 +69,7 @@
         </section>
 
     </main>
+
     <?php require_once('assets/ressources/_footer.php'); ?>
-    <script src="/assets/js/header.js"></script>
 </body>
 </html>

@@ -40,7 +40,7 @@
             </a>
             <!-- Cartouche block 2 end-->
             <!-- Cartouche block 3 start-->
-            <a href="flappyBird.php" target="_blank" class="cartoucheAnchor" title="Go to our flappy bird game">
+            <a href="flappyBird.php" class="cartoucheAnchor" title="Go to our flappy bird game">
                 <section class="container gameCartouche">
                     <h3 class="gameTittle">Flappy bird</h3>
                     <img src="assets/images/game/flappy-bird.png" class="gameIllustrationPicture"   alt="gameplay picture of our click per seconds game">
@@ -54,7 +54,8 @@
             <!-- Cartouche block 3 end-->
         </section>
     </main>
+
     <?php require_once('assets/ressources/_footer.php'); ?>
-    <script src="/assets/js/header.js"></script>
+
 </body>
 </html>
