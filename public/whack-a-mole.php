@@ -9,7 +9,7 @@
         <link href="./assets/images/icone/favicon_troll.ico" type="image/x-icon" rel="shortcut icon">
     </head>
 
-    <body onclick="preventDefault()">
+    <body>
     <?php require_once("./assets/ressources/_header.php"); ?>
     <audio id="audioPierre1" src="./assets/sounds/mississipi2.mp3"></audio>
     <audio id="audioPierre2" src="./assets/sounds/javacript1.mp3"></audio>
