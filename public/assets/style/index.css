@@ -128,6 +128,16 @@ button.login {
     height: 45px;
 }
 
+.errorMDP{
+    background-color: red;
+    color: white;
+    margin-bottom: 0;
+}
+
+.errorMDPPicture{
+    max-height: 30px;
+}
+
 
 /*
 ======================game page==========================================

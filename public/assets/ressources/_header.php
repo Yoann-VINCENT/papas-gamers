@@ -74,7 +74,13 @@
 
 if (empty($_POST['pseudo']) && isset($_POST['submit_form']))
 {
-    echo '<h1>Veuiller entrer votre pseudo</h1>';
+    echo '<h1 class="errorMDP">Veuillez entrer votre pseudo 
+<img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+<img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+<img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+<img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+<img class="errorMDPPicture" src="/assets/images/error/error.png">
+</h1>';
 }
 if (isset($_POST['password']) && $_POST['password'] == "php")
 {
@@ -84,7 +90,13 @@ if (isset($_POST['password']) && $_POST['password'] == "php")
     header('location: /fake.html');
 } else if (isset($_POST['password']) && (($_POST['password'] !=  "php") || $_POST['password'] !=  "javasript"))
 {
-    echo "<h1>Mot de passe incorrect</h1>";
+    echo '<h1 class="errorMDP">Mot de passe incorrect 
+<img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+<img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+<img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+<img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+<img class="errorMDPPicture" src="/assets/images/error/error.png">
+</h1>';
 }
 ?>
 
