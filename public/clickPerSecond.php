@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="/assets/style/bootstrap.css" type="text/css">
         <link rel="stylesheet" href="/assets/style/index.css" type="text/css">
         <link href="/assets/style/clickPerSecond.css" type="text/css" rel="stylesheet">
+        <link href="./assets/images/icone/favicon_troll.ico" type="image/x-icon" rel="shortcut icon">
         <title>Click per second Game</title>
     </head>
     <body class="cpsBackground">

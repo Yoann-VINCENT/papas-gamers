@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/style/bootstrap.css">
     <link rel="stylesheet" href="/assets/style/index.css">
+    <link href="./assets/images/icone/favicon_troll.ico" type="image/x-icon" rel="shortcut icon">
     <title>Mind Games</title>
 </head>
 <body class="gameBackground">

@@ -1,5 +1,6 @@
 :root{
     --gridSize: 100vw;
+    --maxGridSize: 100vh;
     --nbColumns: 10;
     --gameBackground: #127caf80;
 }
@@ -25,6 +26,8 @@ body {
 
 .container-whack {
     height: var(--gridSize);
+    max-height: var(--maxGridSize);
+    max-width: var(--maxGridSize);
     display: grid;
     background-color: var(--gameBackground);
     grid-template-columns: repeat( var(--nbColumns), calc(var(--gridSize) / var(--nbColumns) ));

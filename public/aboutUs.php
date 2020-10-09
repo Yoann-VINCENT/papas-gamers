@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="/assets/style/bootstrap.css">
     <link rel="stylesheet" href="/assets/style/index.css">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="./assets/images/icone/favicon_troll.ico" type="image/x-icon" rel="shortcut icon">
     <title>About Us</title>
 </head>
 <body class="aboutUsBackground">
