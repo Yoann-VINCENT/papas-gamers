@@ -43,7 +43,7 @@ const GAME_DIFFICULTY = {
     ULTIMATE_M: "1"
 }
 
-const GAME_DURATION = 10*1000;
+const GAME_DURATION = 30*1000;
 
 
 //============== GAME VARIABLES =================
