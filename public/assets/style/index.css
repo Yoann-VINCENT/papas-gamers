@@ -512,7 +512,7 @@ footer{
 }
 
 .aboutUsPage{
-    margin-bottom: 50px;
+    min-height: 70vh;
 }
 
 .aboutUs{
