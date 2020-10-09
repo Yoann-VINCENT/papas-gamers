@@ -29,7 +29,6 @@
         <section>
             <canvas id="canvas" width="288" height="512" class="flappyBirdCanvas"></canvas>
         </section>
-        <?php include ('assets/ressources/_footer.php'); ?>
 
         <script src="assets/js/flappyBird.js"></script>
 

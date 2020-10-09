@@ -26,7 +26,6 @@
             <script src="assets/js/header.js"></script>
         </section>
 
-        <?php require_once('assets/ressources/_footer.php'); ?>
 
     </body>
 
