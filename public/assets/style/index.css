@@ -142,25 +142,11 @@ button.login {
 ======================Fake Login JS page==========================================
  */
 
-.gif1{
-    background-image: url("/assets/images/fake/police.gif");
-    background-size: auto;
-    background-repeat: no-repeat;
-}
-
-.gif2{
-    background-image: url("/assets/images/fake/closed.gif");
-    background-size: auto;
-    background-repeat: no-repeat;
-}
-
-
 .gifContainer{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
 
 .gifBody{
@@ -174,13 +160,8 @@ button.login {
 
 .gifh1{
     color: red;
-    font-size: 5em;
-}
-
-.gifText{
-    color: white;
-    font-size: 2em;
-    font-weight: bold;
+    font-size: 2.5em;
+    text-align: center;
 }
 
 /*
