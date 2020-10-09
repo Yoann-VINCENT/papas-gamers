@@ -12,7 +12,7 @@
 
 <body>
 
-    <?php require ('./assets/ressources/_header.php') ?>
+<?php require ('./assets/ressources/_header.php') ?>
 
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
