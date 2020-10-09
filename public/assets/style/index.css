@@ -89,6 +89,7 @@ header {
     width: 50px;
     height: 50px;
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -126,6 +127,16 @@ button.login {
 .logo-icon {
     width: 45px;
     height: 45px;
+}
+
+.errorMDP{
+    background-color: red;
+    color: white;
+    margin-bottom: 0;
+}
+
+.errorMDPPicture{
+    max-height: 30px;
 }
 
 

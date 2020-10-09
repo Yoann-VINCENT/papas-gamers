@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="./assets/style/bootstrap.css" rel="stylesheet" type="text/css" >
     <link href="./assets/style/index.css" type="text/css" rel="stylesheet">
+    <link href="./assets/images/icone/favicon_troll.ico" type="image/x-icon" rel="shortcut icon">
     <title>Les papagamers</title>
 </head>
 

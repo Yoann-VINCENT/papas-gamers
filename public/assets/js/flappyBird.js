@@ -1,5 +1,6 @@
 let cvs = document.getElementById("canvas");
 let ctx = cvs.getContext("2d");
+const startBtn = document.querySelector(".buttonRules");
 
 // load images
 
@@ -58,6 +59,8 @@ pipe[0] = {
 
 function draw(){
 
+    startBtn.style.display = 'none';
+
     ctx.drawImage(bg,0,0);
 
 
@@ -79,7 +82,10 @@ function draw(){
         // detect collision
 
         if( bX + bird.width >= pipe[i].x && bX <= pipe[i].x + pipeNorth.width && (bY <= pipe[i].y + pipeNorth.height || bY+bird.height >= pipe[i].y+constant) || bY + bird.height >=  cvs.height - fg.height){
-            location.reload(); // reload the page
+            location.reload();
+            alert("You loose. Your score : "+score);
+
+
         }
 
         if(pipe[i].x == 5){
@@ -104,4 +110,11 @@ function draw(){
 
 }
 
-draw();
+
+startBtn.addEventListener("click", function()
+        {
+            draw();
+
+        }
+
+    );
