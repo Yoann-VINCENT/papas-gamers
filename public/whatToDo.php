@@ -44,7 +44,7 @@
         </section>
         <!-- 4th solution -->
         <section class="boredCartouche">
-            <h3 class="boredTittle">working with plants</h3>
+            <h3 class="boredTittle">Working with plants</h3>
             <img src="/assets/images/whatToDo/plants.jpg" class="boredPicture" alt="some plants by a window">
             <P class="boredDescription">
                 According to CIPHR, introducing plants to your working environment reduces stress. In a study conducted in 2010, significant reductions were recorded where plants were located in the office. Including: <br>

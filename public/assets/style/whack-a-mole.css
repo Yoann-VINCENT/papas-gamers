@@ -1,6 +1,6 @@
 :root{
     --gridSize: 100vw;
-    --nbColumns: 4;
+    --nbColumns: 10;
     --gameBackground: #127caf80;
 }
 
@@ -32,22 +32,29 @@ body {
 }
 
 .container-whack img {
-    max-width: 100%;
-    min-width: 0;
+    width: 100%;
     height: auto;
     border-radius: 20%;
 }
 
-.test {
-    width: 55%;
+.control-whack {
     max-width: 500px;
-    border: solid var(--dark-green) 3px;
-    box-shadow: 5px 5px 20px var(--dark-green);
-    font-size: 2em;
-    text-align: center;
     margin: 0 auto;
     padding: 20px;
+    /*border: solid var(--dark-green) 3px;
+    box-shadow: 5px 5px 20px var(--dark-green);*/
+    text-align: center;
     user-select: none;
     color: #ffffff;
-    text-shadow: 2px 2px 40px var(--dark-green);
+    font-size: 2em;
+    /*text-shadow: 2px 2px 40px var(--dark-green);*/
+}
+
+.whack-start, .whack-end {
+    background-color: var(--troll-body-green);
+    border-radius: 10px;
+}
+
+.container-whack p {
+    margin-bottom: 0.5rem;
 }

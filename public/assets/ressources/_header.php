@@ -11,9 +11,9 @@
         <ul class="sidenav">
             <li> <a href="/index.php">Home</a> </li>
             <li> <a href="/aboutUs.php">Meet the papas</a> </li>
-            <li> <a href="/whatTodo.php">What to do</a> </li>
+            <li> <a href="/whatTodo.php">What to do?</a> </li>
             <li> <a href="/gameArcade.php">Arcade games</a> </li>
-            <li> <a href="/gameReflexion.php">Puzzle games</a> </li>
+            <li> <a href="/gameReflexion.php">Mind games</a> </li>
             <li> <a href="/gameEducation.php">Coding games</a> </li>
         </ul>
     </nav>
