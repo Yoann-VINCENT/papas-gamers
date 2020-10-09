@@ -1,18 +1,4 @@
-<?php session_start();
-
-?>
-
-<!doctype html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="../style/bootstrap.css" rel="stylesheet" type="text/css" >
-    <link href="../style/index.css" type="text/css" rel="stylesheet">
-    <title>Les papagamers</title>
-</head>
+<?php if(!isset($_SESSION)) session_start(); ?>
 
 <body>
 <header>
@@ -34,35 +20,19 @@
 
     <a href="/index.php"><img class="logo-icon" src="/assets/images/icone/troll.png"></a>
 
-
-
     <?php
-
-
-
     if (isset($_POST['password']) && $_POST['password'] == "php") {
         $_SESSION['password'] = 'php';
     }
-
-    if ($_SESSION['password'] == "php")
+    if (isset($_POST['password']) && $_SESSION['password'] == "php")
     {
-        echo '<div>
-
-<a href="/logout.php"><img class="logo-icon" src="/assets/images/login/profilMatthieu.png"></a>
-</div>';
-
+        echo '<div> <a href="/logout.php"><img class="logo-icon" src="/assets/images/login/profilMatthieu.png"></a></div>';
 
     } else
     {
         echo '<button class="login button_header"  data-toggle="modal" data-target="#exampleModalCenter">Login</button>';
     }
-
-
-
-
     ?>
-
-
 
 </header>
 
@@ -116,6 +86,4 @@ if (isset($_POST['password']) && $_POST['password'] == "php")
     echo "<h1>Mot de passe incorrect</h1>";
 }
 ?>
-
-</body>
 
