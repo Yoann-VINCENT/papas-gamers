@@ -6,9 +6,10 @@
         <link href="./assets/style/bootstrap.css" rel="stylesheet" type="text/css" >
         <link href="assets/style/index.css" type="text/css" rel="stylesheet">
         <link href="assets/style/whack-a-mole.css" type="text/css" rel="stylesheet">
+        <link href="./assets/images/icone/favicon_troll.ico" type="image/x-icon" rel="shortcut icon">
     </head>
 
-    <body>
+    <body onclick="preventDefault()">
     <?php require_once("./assets/ressources/_header.php"); ?>
     <audio id="audioPierre1" src="./assets/sounds/mississipi2.mp3"></audio>
     <audio id="audioPierre2" src="./assets/sounds/javacript1.mp3"></audio>
