@@ -7,7 +7,21 @@ header{
     background-image: url("../images/flappyBird/gameBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
+    display: flex;
+    flex-direction: column;
+    color: white;
 }
+
+.gameRules{
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.rules{
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
  .main_title{
      text-align: center;
      color: white;
