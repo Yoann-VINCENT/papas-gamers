@@ -46,16 +46,14 @@ const GAME_DIFFICULTY = {
 const GAME_DURATION = 10*1000;
 
 
-
-
 //============== GAME VARIABLES =================
-
 
 let whackGrid = null;
 let continueGame = false;
 let startTimer = null;
 let score = 0;
 let gameDifficulty = difficultySelector.value || "NORMAL";
+
 
 //============== MOLE CREATION DELETION ====================
 
@@ -115,6 +113,7 @@ endButton.addEventListener("click", endGame);
 difficultySelector.addEventListener("change", setGameDifficulty);
 
 function startGame(){
+    gridContainer.innerHTML = null;
     whackGrid = createGrid(gameDifficulty);
     continueGame = true;
     startTimer = Date.now() + GAME_DURATION;
@@ -171,6 +170,7 @@ function setGameDifficulty (){
 }
 
 //=======================================================
+
 function createGrid(gameDifficulty){
     let size = GAME_DIFFICULTY[gameDifficulty];
     root.style.setProperty("--nbColumns", size);
