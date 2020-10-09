@@ -18,9 +18,16 @@
         <?php require ('./assets/ressources/_header.php') ?>
 
         <h1 class="main_title">Flappy Bird</h1>
-
-        <canvas id="canvas" width="288" height="512" class="flappyBirdCanvas"></canvas>
-
+        <section class="buttonRules">
+            <button id="gameStartBtn" type="button" class="btn btn-primary btn-lg">Play !</button>
+            <div>
+                <p class="gameRules">Game rules :</p>
+                <p class="rules"> Press any key of your keyboard to make flying the flappy bird and don't touch the pipes !</p>
+            </div>
+        </section>
+        <section>
+            <canvas id="canvas" width="288" height="512" class="flappyBirdCanvas"></canvas>
+        </section>
         <?php include ('assets/ressources/_footer.php'); ?>
 
         <script src="assets/js/flappyBird.js"></script>
