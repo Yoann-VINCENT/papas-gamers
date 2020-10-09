@@ -9,7 +9,7 @@
     <link href="./assets/images/icone/favicon_troll.ico" type="image/x-icon" rel="shortcut icon">
     <title>About Us</title>
 </head>
-<body class="aboutUsBackground">
+<body class="aboutUsBackground ">
     <?php require_once('assets/ressources/_header.php'); ?>
     <main class="aboutUsPage">
         <h2 class="gameBigTittle">About the Papa's</h2>

@@ -4,7 +4,7 @@
     if(isset($_POST['pseudo'])) $pseudo = $_POST['pseudo'];
     if(isset($_POST['password'])) $password = $_POST["password"];
 
-    if ($pseudo === "phprocks" && $password === "php")
+    if ($pseudo === "matthieu" && $password === "phprocks")
     {
         $_SESSION['password'] = 'php';
     }
@@ -91,7 +91,7 @@ if(isset($_POST['submit_form'])) {
               </h1>';
     } elseif ($password === "javascript") {
         header('location: /fake.html');
-    } elseif ($password !== "php" || $pseudo !== "phprocks") {
+    } elseif ($pseudo !== "matthieu" || $password !== "phprocks" ) {
         echo '<h1 class="errorMDP">Identifiants incorrects
                 <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
                 <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
