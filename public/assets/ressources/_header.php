@@ -71,6 +71,7 @@
 
 <?php
 
+
 if (empty($_POST['pseudo']) && isset($_POST['submit_form']))
 {
     echo '<h1>Veuiller entrer votre pseudo</h1>';
