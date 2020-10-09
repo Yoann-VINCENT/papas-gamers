@@ -1,3 +1,16 @@
+<?php
+    if(!isset($_SESSION)) session_start();
+    $pseudo = $password = "";
+    if(isset($_POST['pseudo'])) $pseudo = $_POST['pseudo'];
+    if(isset($_POST['password'])) $password = $_POST["password"];
+
+    if ($pseudo === "phprocks" && $password === "php")
+    {
+        $_SESSION['password'] = 'php';
+    }
+?>
+
+<body>
 <header>
     <nav>
         <div class="hamburger-container">
@@ -8,27 +21,26 @@
         <ul class="sidenav">
             <li> <a href="/index.php">Home</a> </li>
             <li> <a href="/aboutUs.php">Meet the papas</a> </li>
-            <li> <a href="/whatTodo.php">What to do</a> </li>
+            <li> <a href="/whatTodo.php">What to do?</a> </li>
             <li> <a href="/gameArcade.php">Arcade games</a> </li>
-            <li> <a href="/gameReflexion.php">Puzzle games</a> </li>
+            <li> <a href="/gameReflexion.php">Mind games</a> </li>
             <li> <a href="/gameEducation.php">Coding games</a> </li>
         </ul>
     </nav>
 
     <a href="/index.php"><img class="logo-icon" src="/assets/images/icone/troll.png"></a>
 
-    <button class="login"  data-toggle="modal" data-target="#exampleModalCenter">Login</button>
-
     <?php
-    /*
-    if (isset($_POST['password']) && $_POST['password'] == "php")
+    if (isset($_SESSION['password']))
     {
-        echo '<img class="logo-icon" src="../images/login/profilMatthieu.png">';
+        echo '<div> <a href="/logout.php"><img class="logo-icon" src="/assets/images/login/profilMatthieu.png"></a></div>';
+
     } else
     {
         echo '<button class="login button_header"  data-toggle="modal" data-target="#exampleModalCenter">Login</button>';
-    }*/
+    }
     ?>
+
 </header>
 
 <div class="nav-menu-overlay"></div>
@@ -64,22 +76,29 @@
     </div>
 </div>
 
-<?php
-/*
-if (empty($_POST['pseudo']) && isset($_POST['submit_form']))
-{
-    echo 'Veuiller entrer votre pseudo<br />';
-}
-if (isset($_POST['password']) && $_POST['password'] == "php")
-{
-    echo 'login ok<br />';
-} elseif (isset($_POST['password']) && $_POST['password'] ==  "javascript")
-{
-    header('location: /login_redirect_page.html');
-} else if (isset($_POST['password']) && (($_POST['password'] !=  "php") || $_POST['password'] !=  "javasript"))
-{
-    echo "Mot de passe incorrect<br />";
-}
-*/
-?>
 
+
+<?php
+
+if(isset($_POST['submit_form'])) {
+    if (empty($pseudo)) {
+        echo '<h1 class="errorMDP">Veuillez entrer votre pseudo 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png">
+              </h1>';
+    } elseif ($password === "javascript") {
+        header('location: /fake.html');
+    } elseif ($password !== "php" || $pseudo !== "phprocks") {
+        echo '<h1 class="errorMDP">Identifiants incorrects
+                <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png"> 
+                <img class="errorMDPPicture" src="/assets/images/error/error.png">
+              </h1>';
+    }
+}
+?>

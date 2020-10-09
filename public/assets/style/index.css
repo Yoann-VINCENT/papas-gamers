@@ -89,6 +89,7 @@ header {
     width: 50px;
     height: 50px;
     position: relative;
+    cursor: pointer;
 }
 
 
@@ -126,6 +127,16 @@ button.login {
 .logo-icon {
     width: 45px;
     height: 45px;
+}
+
+.errorMDP{
+    background-color: red;
+    color: white;
+    margin-bottom: 0;
+}
+
+.errorMDPPicture{
+    max-height: 30px;
 }
 
 
@@ -274,10 +285,6 @@ button.login {
 }
 
 /* ========== Catch phrase ========== */
-.catch_phrase{
-    background: var(--light-green);
-}
-
 
 .choose_category {
     text-align: center;
@@ -292,7 +299,15 @@ button.login {
     display: flex;
     flex-wrap: wrap;
     padding: 20px;
+}
+
+.index-background {
     background-color: var(--light-green);
+    background-image: url("../images/index/indexBackground.png");
+    background-size: cover;
+    min-height: 400px;
+    padding-top: 25px;
+    margin-top: -5px;
 }
 
 .categorie_cards{
