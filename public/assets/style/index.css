@@ -151,6 +151,7 @@ button.login {
 }
 
 .gifBody{
+    padding: 30px;
     background-color: black;
     background-image: url("/assets/images/error/error.png");
     display: flex;
